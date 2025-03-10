@@ -1,9 +1,9 @@
-import Navbar from '@/components/modules/pages/partials/Navbar'
+import Navbar from '@/components/partials/Navbar'
 import React from 'react'
 
 const page = () => {
   return (
-    <Navbar />
+  <Navbar />
   )
 }
 
