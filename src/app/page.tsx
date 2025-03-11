@@ -1,7 +1,9 @@
-import Navbar from "@/components/partials/Navbar";
-export default function Home() {
+import React from 'react'
 
+const page = () => {
   return (
-  <Navbar />
-  );
+    <div> This is the start </div>
+  )
 }
+
+export default page
