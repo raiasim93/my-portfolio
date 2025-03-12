@@ -8,14 +8,14 @@ const Navbar = () => {
   return (
   <>
       <nav className='h-[80px] py-8 px-[8vw] 2xl:px-[12vw] font-normal text-xl flex justify-between items-center'>
-        <div className='font-semibold text-2xl italic'>raiasim93</div>
-        <div className='hidden md:flex gap-x-4 2xl:gap-x-8'>
-            <a href="" className='uppercase'>About</a>
-            <a href="" className='uppercase'>Work</a>
-            <a href="" className='uppercase'>Services</a>
-            <a href="" className='uppercase'>Contact</a>
+        <div className='font-semibold text-2xl italic cursor-pointer'>raiasim93</div>
+        <div className='hidden text-lg md:flex gap-x-4 2xl:gap-x-8'>
+            <a href="" className='uppercase px-4 py-2 rounded-4xl hover:bg-zinc-900 hover:ring-1 hover:ring-zinc-500 duration-500'>About</a>
+            <a href="" className='uppercase px-4 py-2 rounded-4xl hover:bg-zinc-900 hover:ring-1 hover:ring-zinc-500 duration-300'>Work</a>
+            <a href="" className='uppercase px-4 py-2 rounded-4xl hover:bg-zinc-900 hover:ring-1 hover:ring-zinc-500 duration-300'>Services</a>
+            <a href="" className='uppercase px-4 py-2 rounded-4xl hover:bg-zinc-900 hover:ring-1 hover:ring-zinc-500 duration-300'>Contact</a>
         </div>
-        <RxHamburgerMenu onClick={()=> setSidebarOpen(true)} className={`text-4xl md:hidden p-1 hover:bg-zinc-800 rounded-full cursor-pointer ${sidebarOpen ? "hidden": ""}`} />
+        <RxHamburgerMenu onClick={()=> setSidebarOpen(true)} className={`text-4xl md:hidden p-1 hover:bg-zinc-800 transition-300 ease-in-out rounded-full cursor-pointer ${sidebarOpen ? "hidden": ""}`} />
        
     </nav>
      {sidebarOpen && <Sidebar setSidebarOpen={setSidebarOpen} /> }
