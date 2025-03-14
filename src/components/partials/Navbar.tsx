@@ -6,14 +6,15 @@ const Navbar = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
   <>
-      <nav className='h-[80px] py-8 px-[8vw] 2xl:px-[12vw] font-normal text-xl flex justify-between items-center'>
-        <div className='font-semibold text-2xl italic'>raiasim93</div>
-        <div className='hidden md:flex gap-x-4 2xl:gap-x-8'>
+      <nav className='h-[80px] py-8 px-[12vw] 2xl:px-[16vw] font-normal text-xl flex justify-between items-center  '>
+        <div className='font-semibold text-lime-400 text-2xl italic'>raiasim93</div>
+        <div className='hidden md:flex gap-x-2 lg:gap-x-2  2xl:gap-x-4'>
           {["about", "work", "services", "contact"].map((item, index)=> (
             <a 
               key={index}
               href=''
-              className='uppercase hover:scale-110 hover:text-zinc-400 transition-all duration-200'
+              className={`uppercase hover:scale-110 hover:text-zinc-400 transition-all duration-200 px-4 py-2 rounded-b-4xl
+                        ${item === "contact" && "bg-lime-400 text-white"}`}
             > 
               {item}
             </a>
