@@ -13,7 +13,7 @@ const Sidebar = ({setSidebarOpen}: {setSidebarOpen: (open: boolean) => void }) =
     return ()=> mediaQuery.removeEventListener("change", handleResize);
   }, [setSidebarOpen]);
   return (
-   <div className="py-8 flex flex-col items-center bg-neutral-800 h-screen">
+   <div className="py-8 flex flex-col items-center bg-neutral-900 h-screen fixed top-0 left-0 w-full z-50">
         <IoClose className='text-xl absolute top-6 right-14  hover:bg-zinc-800 rounded-full cursor-pointer '
                  onClick={()=> setSidebarOpen(false)} />
         <div className='flex flex-col gap-6 text-center text-lg'>
