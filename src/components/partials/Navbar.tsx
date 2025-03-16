@@ -1,19 +1,25 @@
 "use client"
 import React, { useState } from 'react';
-import Link from 'next/link';
 import { RxHamburgerMenu } from "react-icons/rx";
 import Sidebar from './Sidebar';
 const Navbar = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
   <>
-      <nav className='h-[80px] py-8 px-[8vw] 2xl:px-[12vw] font-normal text-xl flex justify-between items-center'>
-        <div className='font-semibold text-2xl italic cursor-pointer'>raiasim93</div>
-        <div className='hidden text-lg md:flex gap-x-4 2xl:gap-x-8'>
-            <a href="" className='uppercase px-4 py-2 rounded-4xl hover:bg-zinc-900 hover:ring-1 hover:ring-zinc-500 duration-500'>About</a>
-            <a href="" className='uppercase px-4 py-2 rounded-4xl hover:bg-zinc-900 hover:ring-1 hover:ring-zinc-500 duration-300'>Work</a>
-            <a href="" className='uppercase px-4 py-2 rounded-4xl hover:bg-zinc-900 hover:ring-1 hover:ring-zinc-500 duration-300'>Services</a>
-            <a href="" className='uppercase px-4 py-2 rounded-4xl hover:bg-zinc-900 hover:ring-1 hover:ring-zinc-500 duration-300'>Contact</a>
+      <nav className='h-[80px] py-8 px-[12vw] 2xl:px-[16vw] font-normal text-xl flex justify-between items-center bg-neutral-900 '>
+        <div className='font-normal italic text-2xl tracking-widest'>raiasim93.</div>
+        <div className='hidden md:flex gap-x-2 lg:gap-x-2  2xl:gap-x-4 tracking-wider'>
+          {["About", "Work", "Services", "Contact"].map((item, index)=> (
+            <a 
+              key={index}
+              href=''
+              className={` hover:scale-110 hover:text-zinc-400 transition-all duration-200 px-4 py-2 rounded-2xl
+                        ${item === "Contact" && "bg-indigo-600 text-white"}`}
+            > 
+              {item}
+            </a>
+          ))}
+           
         </div>
         <RxHamburgerMenu onClick={()=> setSidebarOpen(true)} className={`text-4xl md:hidden p-1 hover:bg-zinc-800 transition-300 ease-in-out rounded-full cursor-pointer ${sidebarOpen ? "hidden": ""}`} />
        
