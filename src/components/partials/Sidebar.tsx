@@ -14,14 +14,14 @@ const Sidebar = ({ setSidebarOpen }: { setSidebarOpen: (open: boolean) => void }
 
   return (
     <div className="fixed inset-0 z-50 flex">
-      {/* Background Overlay */}
+      {/* Background Overlay when sidebar is opened */}
       <div 
         className="fixed inset-0 bg-black opacity-90 transition-opacity duration-300" 
         onClick={() => setSidebarOpen(false)}
       />
 
       {/* Sidebar */}
-      <div className="py-8 flex flex-col items-center bg-neutral-900 h-screen fixed top-0 left-0 w-1/2 z-50">
+      <div className="py-8 flex flex-col items-center bg-neutral-900 h-screen fixed top-0 left-0 w-[60%] z-50">
         <div className='w-full flex justify-end px-8'>
         <IoClose className='text-4xl  hover:bg-zinc-800 rounded-full cursor-pointer'
                  onClick={() => setSidebarOpen(false)} />
