@@ -2,9 +2,11 @@ import React from 'react';
 import toolsData from '@/components/common/data/toolsData';
 import CardTools from '@/components/common/cards/CardTools';
 
+
+
 const ToolsSection = () => {
   return (
-    <section className='w-full py-8 px-[12vw] 2xl:px-[16vw] flex flex-col gap-y-8'>
+    <section className='w-full py-16 px-[12vw] 2xl:px-[16vw] flex flex-col gap-y-8'>
       <div className='flex md:justify-center text-2xl font-semibold md:text-4xl'>
         My Tech Stack
       </div>
@@ -14,7 +16,7 @@ const ToolsSection = () => {
       {/* This is where the tools will be displayed */}
       <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
         {toolsData.map((item, index) => (
-          <CardTools key={index} image={item.image} toolName={item.toolName} />
+          <CardTools key={index} image={item.image} toolName={item.toolName} index={index}/>
         ))}
       </div>
 
