@@ -21,7 +21,7 @@ const Navbar = () => {
           ))}
            
         </div>
-        <RxHamburgerMenu onClick={()=> setSidebarOpen(true)} className={`text-4xl md:hidden p-1 hover:bg-zinc-800 transition-300 ease-in-out rounded-full cursor-pointer ${sidebarOpen ? "hidden": ""}`} />
+        <RxHamburgerMenu onClick={()=> setSidebarOpen(true)} className={` text-4xl md:hidden p-1 hover:bg-zinc-800 transition-300 ease-in-out rounded-full cursor-pointer ${sidebarOpen ? "hidden": ""}`} />
        
     </nav>
      {sidebarOpen && <Sidebar setSidebarOpen={setSidebarOpen} /> }

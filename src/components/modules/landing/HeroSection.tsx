@@ -7,18 +7,21 @@ const HeroSection = () => {
     return (
         <section className='min-h-screen  w-full py-8 px-[12vw] 2xl:px-[16vw] flex flex-col gap-x-8 md:flex-row justify-center items-center bg-neutral-950 text-4xl  '>
             {/* Text section */}
-            <div className='w-full mb-12 md:mb-0 md:w-1/2 flex flex-col md:flex-col gap-y-2  md:gap-y-12 text-center md:text-left '>
+            <div className='w-full mb-12 md:mb-0 md:w-1/2 flex flex-col md:flex-col gap-y-6  md:gap-y-8 text-center md:text-left '>
                 <div className='text-xl flex items-center justify-center md:justify-start md:text-2xl mb-4 md:mb-0 tracking-widest sm:mb-0  w-full'>
-                    Heyy! I'm Asim. <FaHandPeace className='text-2xl' />
+                    {/* Heyy! I'm Asim. <FaHandPeace className='text-2xl'  */}
+                    Welcome to my Portflio <FaHandPeace />
                 </div>
-                <div className='w-full text-2xl md:text-4xl  tracking-widest leading-10 md:leading-12 ' >
-                    Building Brands, <span className='text-lime-500'> Developing Applications </span>  and Delivering
-                    <span className='text-lime-500'> Great UI/UX </span>
+                <div className='w-full md:w-3/4 md:text-6xl ' >
+                    I am a   <span className='text-lime-500'> Frontend Developer </span> 
+                </div>
+                <div className='text-2xl text-gray-400 md:flex hidden tracking-wider'>
+                    I design impactful brands, develop innovative Applications and craft awesome UI / UX.
                 </div>
 
                 <div className='w-full flex flex-wrap gap-y-6 justify-center md:justify-between items-center'>
                     {/* Explore More Button */}
-                    <div className='group flex items-center bg-neutral-900 border border-white text-white px-6 py-2 rounded-full 
+                    <div className='group flex items-center bg-neutral-700 border border-white text-white px-6 py-2 rounded-full 
                         transition-all duration-200 hover:bg-lime-500 hover:scale-110 hover:border-2 hover:border-white hover:cursor-pointer
                         text-lg md:text-2xl whitespace-nowrap'>
                         Explore More
@@ -42,7 +45,7 @@ const HeroSection = () => {
                     alt='Image for hero section'
                     width={120}
                     height={120}
-                    className='aspect-square object-cover rounded-4xl md:rounded-full border-4 md:border-6 border-white w-2/3 md:w-[80%]'
+                    className='aspect-square object-cover rounded-full border-4 md:border-6 border-white w-2/3 md:w-[80%]'
                 />
             </div>
 
