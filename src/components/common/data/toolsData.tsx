@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { FaGithub } from "react-icons/fa";
 const toolsData = [
     {
         id: "1",

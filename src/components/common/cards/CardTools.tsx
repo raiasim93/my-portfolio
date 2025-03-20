@@ -1,6 +1,11 @@
 import React from 'react'
 
-const CardTools = ({toolName, image, index}) => {
+interface CardToolsProps{
+  toolName: string;
+  image: React.ReactNode;
+  index: number;
+}
+const CardTools: React.FC<CardToolsProps> = ({toolName, image, index}) => {
   return (
     <>
     <div key={index} 
