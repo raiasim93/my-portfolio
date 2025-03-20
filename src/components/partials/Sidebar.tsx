@@ -28,7 +28,7 @@ const Sidebar = ({ setSidebarOpen }: { setSidebarOpen: (open: boolean) => void }
         </div>
         
         <div className='flex flex-col gap-6 text-center text-xl'>
-          {["About", "Work", "Services", "Contact"].map((item, index) => (
+          {["About", "Experience", "Resume", "Contact"].map((item, index) => (
             <a
               key={index}
               href=''
