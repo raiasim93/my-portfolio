@@ -5,17 +5,17 @@ import { FaLinkedin, FaGithub, FaFacebook, FaHandPeace } from 'react-icons/fa';
 
 const HeroSection = () => {
     return (
-        <section className='min-h-[calc(100vh-80px)]  w-full py-8 px-[12vw] 2xl:px-[16vw] flex flex-col gap-x-8 md:flex-row justify-center items-center bg-neutral-950 text-4xl  '>
+        <section className='min-h-[calc(100vh-80px)]  w-full py-8 px-[12vw] 2xl:px-[16vw] flex flex-col gap-x-8 md:flex-row justify-center items-center  text-4xl  '>
             {/* Text section */}
             <div className='w-full mb-12 md:mb-0 md:w-1/2 flex flex-col md:flex-col gap-y-6  md:gap-y-8 text-center md:text-left '>
-                <div className='text-xl flex items-center justify-center md:justify-start md:text-2xl mb-4 md:mb-0 tracking-widest sm:mb-0  w-full'>
+                <div className='text-lg flex items-center justify-center md:justify-start md:text-xl mb-4 md:mb-0 tracking-widest sm:mb-0  w-full'>
                     {/* Heyy! I'm Asim. <FaHandPeace className='text-2xl'  */}
                     Welcome to my Portflio <FaHandPeace />
                 </div>
-                <div className='w-full md:w-3/4 md:text-6xl ' >
+                <div className='w-full md:w-3/4 text-4xl md:text-5xl ' >
                     I am a   <span className='text-lime-500'> Frontend Developer </span> 
                 </div>
-                <div className='text-2xl text-gray-400 md:flex hidden tracking-wider'>
+                <div className='text-lg md:text-xl text-gray-400 md:flex hidden tracking-wider'>
                     I design impactful brands, develop innovative Applications and craft awesome UI / UX.
                 </div>
 
@@ -41,11 +41,12 @@ const HeroSection = () => {
             {/* Image section */}
             <div className='w-full md:w-1/2 flex justify-center md:justify-end '>
                 <Image
-                    src='/heroImage.png'
+                    src='/heroMemoji.png'
                     alt='Image for hero section'
                     width={120}
                     height={120}
                     className='aspect-square object-cover rounded-full border-4 md:border-6 border-white w-2/3 md:w-[80%]'
+                    quality={100}
                 />
             </div>
 

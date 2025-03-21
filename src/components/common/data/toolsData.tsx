@@ -83,15 +83,6 @@ const toolsData = [
     },
     {
         id: "10",
-        toolName: "React Bootstrap",
-        image: <Image src={'/React Bootstrap.png'}
-            className='aspect-square object-cover w-20 h-20'
-            alt='React Icon image'
-            width={40}
-            height={40} />
-    },
-    {
-        id: "11",
         toolName: "Figma",
         image: <Image src={'/Figma.png'}
             className='aspect-square object-cover w-20 h-20'
@@ -100,7 +91,7 @@ const toolsData = [
             height={40} />
     },
     {
-        id: "12",
+        id: "11",
         toolName: "HTML5",
         image: <Image src={'/HTML5.png'}
             className='aspect-square object-cover w-20 h-20'
@@ -109,9 +100,18 @@ const toolsData = [
             height={40} />
     },
     {
-        id: "13",
+        id: "12",
         toolName: "CSS3",
         image: <Image src={'/CSS3.png'}
+            className='aspect-square object-cover w-20 h-20'
+            alt='React Icon image'
+            width={40}
+            height={40} />
+    },
+    {
+        id: "13",
+        toolName: "Jira",
+        image: <Image src={'/Jira.png'}
             className='aspect-square object-cover w-20 h-20'
             alt='React Icon image'
             width={40}
