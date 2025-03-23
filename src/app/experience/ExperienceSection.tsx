@@ -2,7 +2,7 @@ import React from 'react'
 
 const ExperienceSection = () => {
     return (
-        <section className='w-full py-8 px-[12vw] 2xl:px-[16vw] flex flex-col gap-y-8'>
+        <section className='w-full py-8 px-[12vw] 2xl:px-[16vw] flex flex-col gap-y-8 bg-white text-black'>
             {/* Section Title */}
             <div className='flex justify-start text-2xl md:text-4xl'>
                 Qualifications
