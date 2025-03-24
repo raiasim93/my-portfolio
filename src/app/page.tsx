@@ -9,7 +9,7 @@ const page = () => {
     <Navbar />
     <HeroSection />
     <ToolsSection />
-    
+    <AboutSection />
     </>
   )
 }
