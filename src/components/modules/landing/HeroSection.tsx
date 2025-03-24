@@ -9,7 +9,7 @@ const HeroSection = () => {
             {/* Text section */}
             <div className='w-full mb-12 md:mb-0 md:w-1/2 flex flex-col md:flex-col gap-y-6  md:gap-y-8 text-center md:text-left '>
                 <div className='text-lg flex items-center justify-center md:justify-start md:text-2xl mb-4 md:mb-0 tracking-widest sm:mb-0  w-full'>
-                    {/* Heyy! I'm Asim. <FaHandPeace className='text-2xl'  */}
+                
                     Welcome to my Portflio <FaHandPeace />
                 </div>
                 <div className='w-full md:w-3/4 text-4xl md:text-5xl ' >
