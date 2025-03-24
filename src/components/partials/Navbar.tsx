@@ -6,7 +6,8 @@ const Navbar = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
   <>
-      <nav className='h-[80px] py-8 px-[12vw] 2xl:px-[16vw] font-normal text-xl flex justify-between items-center  border-b-[0.25px] border-b-white'>
+      <nav className='bg-gradient-to-r to-lime-950 via-zinc-950
+                      h-[80px] py-8 px-[12vw] 2xl:px-[16vw] font-normal text-xl flex justify-between items-center  '>
         <div className='font-medium italic text-2xl tracking-widest'>raiasim93.</div>
         <div className='hidden md:flex gap-x-2 lg:gap-x-2  2xl:gap-x-4 tracking-wider'>
           {["About", "Experience", "Resume", "Contact"].map((item, index)=> (
