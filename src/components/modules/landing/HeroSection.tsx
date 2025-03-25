@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithub, FaFacebook, FaHandPeace } from 'react-icons/fa';
 
 const HeroSection = () => {
     return (
-        <section className='bg-gradient-to-tr to-lime-950 via-zinc-950 min-h-[calc(100vh-80px)]  w-full py-8 px-[12vw] 2xl:px-[16vw] flex flex-col gap-x-8 md:flex-row justify-center items-center  text-4xl  '>
+        <section className='bg-gradient-to-r to-lime-950 via-zinc-950 min-h-[calc(100vh-80px)]  w-full py-8 px-[12vw] 2xl:px-[16vw] flex flex-col gap-x-8 md:flex-row justify-center items-center  text-4xl  '>
             {/* Text section */}
             <div className='w-full mb-12 md:mb-0 md:w-1/2 flex flex-col md:flex-col gap-y-6  md:gap-y-8 text-center md:text-left '>
                 <div className='text-lg flex items-center justify-center md:justify-start md:text-2xl mb-4 md:mb-0 tracking-widest sm:mb-0  w-full'>
@@ -41,7 +41,7 @@ const HeroSection = () => {
             {/* Image section */}
             <div className='w-full md:w-1/2 flex justify-center md:justify-end '>
                 <Image
-                    src='/heroMemoji.png'
+                    src='/heroImage.png'
                     alt='Image for hero section'
                     width={120}
                     height={120}

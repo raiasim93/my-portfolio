@@ -14,7 +14,7 @@ const AboutSection = () => {
       </div>
       <div className='w-full md:w-1/3 flex justify-center items-center'>
         <Image
-          className='aspect-square '
+          className='aspect-square w-1/2 object-center border-2 border-lime-400 '
           src='/aboutHero.jpeg'
           alt='Main Image of Hero Section'
           width={40}
@@ -23,7 +23,7 @@ const AboutSection = () => {
       </div>
       <div className='w-full md:w-1/3  flex flex-col items-center md:justify-end md:items-end '>
         <div className='text-2xl md:text-4xl'> Want to know more? </div>
-        <div className='text-xl md:text-2xl flex gap-x-4 items-center'> Scroll Below <FaMouse /> </div>
+        <div className='text-xl md:text-2xl flex gap-x-4 items-center '> Scroll Below <FaMouse className='text-lime-400' /> </div>
       </div>
     </section>
   )
