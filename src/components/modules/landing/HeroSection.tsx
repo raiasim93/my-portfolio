@@ -47,6 +47,7 @@ const HeroSection = () => {
                     height={120}
                     className='aspect-square object-cover rounded-full border-4 md:border-6 border-white w-2/3 md:w-[80%]'
                     quality={100}
+                    unoptimized
                 />
             </div>
 

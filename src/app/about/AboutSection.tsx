@@ -14,11 +14,12 @@ const AboutSection = () => {
       </div>
       <div className='w-full md:w-1/3 flex justify-center items-center'>
         <Image
-          className='aspect-square w-1/2 object-center border-2 border-lime-400 '
+          className='aspect-square w-2/3 object-cover border-2 border-lime-400 rounded-2xl'
           src='/aboutHero.jpeg'
           alt='Main Image of Hero Section'
           width={40}
           height={40}
+          unoptimized
         />
       </div>
       <div className='w-full md:w-1/3  flex flex-col items-center md:justify-end md:items-end '>
