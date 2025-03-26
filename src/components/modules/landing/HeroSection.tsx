@@ -16,7 +16,7 @@ const HeroSection = () => {
                     I am a   <span className='text-lime-500'> Frontend Developer </span> 
                 </div>
                 <div className='text-md md:text-lg text-gray-400 md:flex hidden tracking-wider'>
-                    I turn ideas into interactive realities and craft product experience that solve real-world problems. Let's bring vision to your life!!
+                    I turn ideas into interactive realities and craft product experience that solve real-world problems. Let&apos;s bring vision to your life!!
                 </div>
 
                 <div className='w-full flex flex-wrap gap-y-6 justify-center md:justify-between items-center'>
