@@ -1,37 +1,80 @@
 "use client"
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { FaMouse } from 'react-icons/fa';
 import Image from 'next/image';
 import gsap from 'gsap';
 
 const AboutSection = () => {
+  const aboutIntroRef = useRef(null);
   const aboutImageRef = useRef(null);
-  useEffect(() => {
-
-    gsap.to(aboutImageRef.current, { rotation: 120, duration: 0.5, y: -100, yoyo: true, repeat: 1 });
-
+  const aboutOutro = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+  useEffect(()=> {
+    const observer = new IntersectionObserver(
+      ([entry])=> {
+        console.log(entry.isIntersecting)
+       setIsVisible(entry.isIntersecting);
+      },
+      {
+        threshold: 0.5
+      }
+    )
+    if(aboutIntroRef.current){
+      observer.observe(aboutIntroRef.current);
+    }
+    if(aboutImageRef.current){
+      observer.observe(aboutImageRef.current);
+    }
+    aboutOutro.current && observer.observe(aboutOutro.current);
+    return()=> {
+      if(aboutIntroRef.current){
+        observer.unobserve(aboutIntroRef.current);
+      }
+      if(aboutImageRef.current){
+        observer.unobserve(aboutImageRef.current);
+      }
+      aboutOutro.current && observer.unobserve(aboutOutro.current);
+    }
   }, []);
+  useEffect(()=> {
+    if(isVisible){
+      gsap.fromTo(aboutIntroRef.current,{ opacity: 0, x: 600, scale: 0.5 },
+                                        { opacity: 1, x: 0, duration: 2, scale:1, ease: "power2.out"}
+                 );
+                 gsap.fromTo(
+                  aboutImageRef.current, { opacity: 0, x: 400, scale: 2 },
+                                         { opacity: 1, x: 0, y: 0, scale: 1, duration: 2.5, ease: "power2.out" }
+                );
+                gsap.fromTo(
+                  aboutOutro.current, {opacity:0, x: -500, y: 300, scale: 2},
+                                      {opacity: 1, x: 0, y: 0, scale: 1, duration : 2, ease: "power3.out"}
+                )
+      }
+      
+  }, [isVisible]);
+
+  
   return (
     <section className='py-12 px-[12vw] 2xl:px-[16vw] w-full flex flex-col md:flex-row min-h-[100vh] justify-center gap-y-16 md:gap-y-0'>
-      <div className='w-full md:w-1/3  flex flex-col gap-y-4 md:gap-y-8 justify-center md:justify-start'>
-        <div className='text-4xl md:text-6xl font-semibold text-center md:text-start'>   Hey! I&apos;m <span className='text-lime-400'> Asim. </span>  </div>
-        <div className='text-lg md:text-xl font-light'>
+      <div ref={aboutIntroRef} className='w-full md:w-1/3  flex flex-col gap-y-4 md:gap-y-8 justify-center md:justify-start opacity-0'>
+        <div className='text-3xl md:text-6xl font-semibold text-center md:text-start'>   Hey! I&apos;m <span className='text-lime-400'> Asim. </span>  </div>
+        <div className='text-lg md:text-xl font-light text-center md:text-start'>
           I&apos;mm a Sydney-based Frontend Developer who loves designing and developing impactful brands as well as
           building innovative applications with strong emphasis on <span className='text-lime-400 text-2xl'> Product Experience.</span>  </div>
 
       </div>
-      <div ref={aboutImageRef} className='w-full md:w-1/3 flex justify-center items-center'>
+      <div ref={aboutImageRef} className='w-full md:w-1/3 flex justify-center items-center opacity-0'>
         <Image
 
-          className='aspect-square w-2/3 object-cover border-2 border-white rounded-2xl'
+          className='aspect-square w-1/2 md:w-2/3 object-cover border-2 border-white rounded-2xl'
           src='/aboutHero.jpeg'
           alt='Main Image of Hero Section'
-          width={40}
-          height={40}
+          width={400}
+          height={400}
 
         />
       </div>
-      <div className='w-full md:w-1/3  flex flex-col items-center gap-y-4 md:gap-y-2 md:justify-end md:items-end '>
+      <div ref={aboutOutro} className='w-full md:w-1/3  flex flex-col items-center gap-y-4 md:gap-y-2 md:justify-end md:items-end '>
         <div className='text-2xl md:text-4xl'> Want to know more? </div>
         <div className='text-xl md:text-2xl flex gap-x-4 items-center '> Scroll Below <FaMouse className='text-lime-400' /> </div>
       </div>
