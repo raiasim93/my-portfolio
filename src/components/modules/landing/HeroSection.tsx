@@ -40,21 +40,21 @@ const HeroSection = () => {
             </div>
             {/* Image section */}
             <div className='w-full md:w-1/2 flex justify-center items-center md:justify-end '>
-                {/* <Image
+                <Image
                     src='/heroImage.png'
                     alt='Image for hero section'
                     width={120}
                     height={120}
                     className='aspect-square object-cover rounded-full border-4 md:border-6 border-white w-2/3 md:w-[80%]'
                     quality={100}
-                /> */}
-                <div className='grid-cols-8 gap-x-4 min-h-screen'>
+                />
+                {/* <div className='grid-cols-8 gap-x-4 min-h-screen'>
                    <div className='col-span-1 bg-zinc-900'>1 </div>
                    <div className='col-span-1 bg-zinc-900'>2 </div>
                    <div className='col-span-4 bg-zinc-900'>3 </div>
                    <div className='col-span-1 bg-zinc-900'> 4</div>
                    <div className='col-span-1 bg-zinc-900'>5 </div>
-                </div>
+                </div> */}
             </div>
 
         </section>
