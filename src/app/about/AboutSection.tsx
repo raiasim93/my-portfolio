@@ -5,6 +5,7 @@ import Image from 'next/image';
 import gsap from 'gsap';
 
 const AboutSection = () => {
+  const sectionRefAbout = useRef(null);
   const aboutIntroRef = useRef(null);
   const aboutImageRef = useRef(null);
   const aboutOutro = useRef(null);
@@ -16,38 +17,31 @@ const AboutSection = () => {
        setIsVisible(entry.isIntersecting);
       },
       {
-        threshold: 0.5
+        threshold: 0.3
       }
     )
-    if(aboutIntroRef.current){
-      observer.observe(aboutIntroRef.current);
+    if(sectionRefAbout.current){
+      observer.observe(sectionRefAbout.current);
     }
-    if(aboutImageRef.current){
-      observer.observe(aboutImageRef.current);
-    }
-    aboutOutro.current && observer.observe(aboutOutro.current);
     return()=> {
-      if(aboutIntroRef.current){
-        observer.unobserve(aboutIntroRef.current);
+      if(sectionRefAbout.current){
+        observer.unobserve(sectionRefAbout.current);
       }
-      if(aboutImageRef.current){
-        observer.unobserve(aboutImageRef.current);
-      }
-      aboutOutro.current && observer.unobserve(aboutOutro.current);
+  
     }
   }, []);
   useEffect(()=> {
     if(isVisible){
-      gsap.fromTo(aboutIntroRef.current,{ opacity: 0, x: 600, scale: 0.5 },
+      gsap.fromTo(aboutIntroRef.current,{ opacity: 0, x: 300, scale: 0.5 },
                                         { opacity: 1, x: 0, duration: 2, scale:1, ease: "power2.out"}
                  );
                  gsap.fromTo(
-                  aboutImageRef.current, { opacity: 0, x: 400, scale: 2 },
-                                         { opacity: 1, x: 0, y: 0, scale: 1, duration: 2.5, ease: "power2.out" }
+                  aboutImageRef.current, { opacity: 0, x: 100, scale: 2 },
+                                         { opacity: 1, x: 0, y: 0, scale: 1, duration: 2, ease: "power2.out" }
                 );
                 gsap.fromTo(
-                  aboutOutro.current, {opacity:0, x: -500, y: 300, scale: 2},
-                                      {opacity: 1, x: 0, y: 0, scale: 1, duration : 2, ease: "power3.out"}
+                  aboutOutro.current, {opacity:0, y: -700, scale: 2},
+                                      {opacity: 1, x: 0, y: 0, scale: 1, duration : 1, ease: "power3.out"}
                 )
       }
       
@@ -55,7 +49,7 @@ const AboutSection = () => {
 
   
   return (
-    <section className='py-12 px-[12vw] 2xl:px-[16vw] w-full flex flex-col md:flex-row min-h-[100vh] justify-center gap-y-16 md:gap-y-0'>
+    <section ref={sectionRefAbout} className='py-12 px-[12vw] 2xl:px-[16vw] w-full flex flex-col md:flex-row min-h-[100vh] justify-center gap-y-16 md:gap-y-0'>
       <div ref={aboutIntroRef} className='w-full md:w-1/3  flex flex-col gap-y-4 md:gap-y-8 justify-center md:justify-start opacity-0'>
         <div className='text-3xl md:text-6xl font-semibold text-center md:text-start'>   Hey! I&apos;m <span className='text-lime-400'> Asim. </span>  </div>
         <div className='text-lg md:text-xl font-light text-center md:text-start'>
