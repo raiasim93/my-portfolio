@@ -33,15 +33,15 @@ const AboutSection = () => {
   useEffect(()=> {
     if(isVisible){
       gsap.fromTo(aboutIntroRef.current,{ opacity: 0, x: 300, scale: 0.5 },
-                                        { opacity: 1, x: 0, duration: 2, scale:1, ease: "power2.out"}
+                                        { opacity: 1, x: 0, duration: 2.5, scale:1, ease: "power2.out"}
                  );
                  gsap.fromTo(
                   aboutImageRef.current, { opacity: 0, x: 100, scale: 2 },
-                                         { opacity: 1, x: 0, y: 0, scale: 1, duration: 2, ease: "power2.out" }
+                                         { opacity: 1, x: 0, y: 0, scale: 1, duration: 2.5, ease: "bounce.out" }
                 );
                 gsap.fromTo(
                   aboutOutro.current, {opacity:0, y: -700, scale: 2},
-                                      {opacity: 1, x: 0, y: 0, scale: 1, duration : 1, ease: "power3.out"}
+                                      {opacity: 1, x: 0, y: 0, scale: 1, duration : 2.5, ease: "power3.out"}
                 )
       }
       
@@ -53,7 +53,7 @@ const AboutSection = () => {
       <div ref={aboutIntroRef} className='w-full md:w-1/3  flex flex-col gap-y-4 md:gap-y-8 justify-center md:justify-start opacity-0'>
         <div className='text-3xl md:text-6xl font-semibold text-center md:text-start'>   Hey! I&apos;m <span className='text-lime-400'> Asim. </span>  </div>
         <div className='text-lg md:text-xl font-light text-center md:text-start'>
-          I&apos;mm a Sydney-based Frontend Developer who loves designing and developing impactful brands as well as
+          I&apos;m a Sydney-based Frontend Developer who loves designing and developing impactful brands as well as
           building innovative applications with strong emphasis on <span className='text-lime-400 text-2xl'> Product Experience.</span>  </div>
 
       </div>
