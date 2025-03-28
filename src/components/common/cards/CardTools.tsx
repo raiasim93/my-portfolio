@@ -10,7 +10,7 @@ const CardTools: React.FC<CardToolsProps> = ({toolName, image, index}) => {
     <>
     <div key={index} 
               className='border-2 rounded-2xl border-gray-300 py-6 flex flex-col items-center gap-y-4 shadow-2xl
-                        hover:bg-neutral-700 cursor-pointer hover:scale-110 transition-all duration-200
+                        hover:bg-neutral-700 cursor-pointer hover:scale-95 transition-all duration-200
                         '>
             <div className='text-2xl md:text-4xl flex justify-center'>
               {image}

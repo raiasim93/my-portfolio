@@ -69,8 +69,8 @@ const AboutSection = () => {
         />
       </div>
       <div ref={aboutOutro} className='w-full md:w-1/3  flex flex-col items-center gap-y-4 md:gap-y-2 md:justify-end md:items-end '>
-        <div className='text-2xl md:text-4xl'> Want to know more? </div>
-        <div className='text-xl md:text-2xl flex gap-x-4 items-center '> Scroll Below <FaMouse className='text-lime-400' /> </div>
+        <div className='text-2xl md:text-4xl text-end'> Want to know more? </div>
+        <div className='text-xl md:text-2xl flex gap-x-4 items-end '> Scroll Below <FaMouse className='text-lime-400' /> </div>
       </div>
     </section>
   )
