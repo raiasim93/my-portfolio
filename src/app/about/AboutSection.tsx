@@ -35,16 +35,16 @@ const AboutSection = () => {
   }, [hasAnimated]);
   useEffect(()=> {
     if(isVisible){
-      gsap.fromTo(aboutIntroRef.current,{ opacity: 0, x: 300, scale: 0.5 },
+      gsap.fromTo(aboutIntroRef.current,{ opacity: 0, x: 300, scale: 1.5 },
                                         { opacity: 1, x: 0, duration: 2.5, scale:1, ease: "power2.out"}
                  );
                  gsap.fromTo(
                   aboutImageRef.current, { opacity: 0, x: 100, scale: 2 },
-                                         { opacity: 1, x: 0, y: 0, scale: 1, duration: 2.5, ease: "bounce.out" }
+                                         { opacity: 1, x: 0, y: 0, scale: 1, duration: 1.5, ease: "power1.in" }
                 );
                 gsap.fromTo(
                   aboutOutro.current, {opacity:0, y: -700, scale: 2},
-                                      {opacity: 1, x: 0, y: 0, scale: 1, duration : 2.5, ease: "power3.out"}
+                                      {opacity: 1, x: 0, y: 0, scale: 1, duration : 3.5, ease: "power3.out"}
                 )
       }
       
