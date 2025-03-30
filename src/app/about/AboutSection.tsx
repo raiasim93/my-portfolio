@@ -10,11 +10,14 @@ const AboutSection = () => {
   const aboutImageRef = useRef(null);
   const aboutOutro = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
   useEffect(()=> {
+    if(hasAnimated) return;
     const observer = new IntersectionObserver(
       ([entry])=> {
         console.log(entry.isIntersecting)
        setIsVisible(entry.isIntersecting);
+       setHasAnimated(true);
       },
       {
         threshold: 0.3
@@ -29,7 +32,7 @@ const AboutSection = () => {
       }
   
     }
-  }, []);
+  }, [hasAnimated]);
   useEffect(()=> {
     if(isVisible){
       gsap.fromTo(aboutIntroRef.current,{ opacity: 0, x: 300, scale: 0.5 },
