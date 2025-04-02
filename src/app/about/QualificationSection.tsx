@@ -7,7 +7,6 @@ import scrolltrigger from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(scrolltrigger)
 const QualificationSection = () => {
-  const cardsRef = useRef(null);
   useEffect(()=> {
 
   }, []);
