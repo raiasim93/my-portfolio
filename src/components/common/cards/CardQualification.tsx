@@ -16,10 +16,10 @@ const CardQualification: React.FC <CardQualificationProps>  = ({school, degree, 
     hover:scale-95 hover:bg-zinc-900 cursor-pointer'>
             <div className='text-2xl text-center font-semibold flex flex-col gap-y-8 md:text-3xl  items-center gap-x-4'>
                 <FaUniversity className='text-2xl md:text-3xl' />
-                <span> {school} </span>
+                <span> {degree} </span>
             </div>
             <div className='text-gray-500 text-lg md:text-xl text-center'>
-                {degree}
+                {school}
             </div>
             <div>
                 {date}
