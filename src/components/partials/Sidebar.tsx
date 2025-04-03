@@ -38,6 +38,12 @@ const Sidebar = ({ setSidebarOpen }: { setSidebarOpen: (open: boolean) => void }
           ))}
         </div>
       </div>
+      {/* make a sidebar which have very huge heading for each and use gsap for smooth animation */}
+      <div>
+        <div>About</div>
+        <div>Experience</div>
+        <div>Resume</div>
+      </div>
     </div>
   );
 }
