@@ -41,7 +41,7 @@ const HeroSection = () => {
             {/* Image section */}
             <div className='w-full md:w-1/2 flex justify-center items-center md:justify-end '>
                 <Image
-                    src='/heroImage.png'
+                    src='/ghibli.PNG'
                     alt='Image for hero section'
                     width={120}
                     height={120}

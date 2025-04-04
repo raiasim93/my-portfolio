@@ -9,6 +9,7 @@ gsap.registerPlugin(scrolltrigger)
 const QualificationSection = () => {
   const qualificationSectionRef = useRef(null);
   const titleRef = useRef(null);
+  const cardRefElements = useRef(new Array());
   useEffect(()=> {
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -23,7 +24,7 @@ const QualificationSection = () => {
     tl.fromTo(
       titleRef.current,
       {x: -150, opacity: 0},
-      {x: 0, opacity: 1, duration: 0.6, ease: "power1.inOut"}
+      {x: 0, opacity: 1, duration: 0.6, ease: "power2.out"}
     )
   })
   return (
