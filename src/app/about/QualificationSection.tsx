@@ -14,11 +14,10 @@ const QualificationSection = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: qualificationSectionRef.current,
-        start: "top 80%",
+        start: "top center",
         end:"center center",
-        toggleActions: "play none none res",
+        toggleActions: "play none none reset",
         scrub: true,
-        markers: true,
       }
     });
     tl.fromTo(
