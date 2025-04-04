@@ -20,9 +20,7 @@ const AboutSection = () => {
         start: "top 60%",
         end: "bottom 20%",
         toggleActions: "play none none reset",
-        scrub: 1,
-        markers: true,
-        
+        scrub: 1,     
       }
     });
     tl.fromTo(
