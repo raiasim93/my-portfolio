@@ -8,25 +8,24 @@ const ToolsSection = () => {
   const [showAll, setShowAll] = useState(false);
 
   return (
-    <section className="w-full py-16 px-[12vw] 2xl:px-[16vw] flex flex-col gap-y-8 bg-zinc-900">
-      <div className="flex md:justify-center text-2xl font-semibold md:text-4xl">
+    <section className="w-full py-16 px-[6vw] 2xl:px-[16vw] flex flex-col gap-y-8 bg-zinc-900">
+      <div className="flex lg:justify-center text-2xl font-semibold lg:text-4xl">
         My Tech Stack
       </div>
-      <div className="text-gray-400 w-full text-left md:w-1/2 md:mx-auto md:text-center md:text-xl">
+      <div className="text-gray-400 w-full text-left lg:w-1/2 lg:mx-auto lg:text-center lg:text-xl">
         Here are the development tools I specialize in and will be using to make your website both visually appealing and fully functional. 🚀
       </div>
 
       {/* Tools Grid with Smooth Expansion */}
       <div
-        className={`grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 overflow-hidden transition-all duration-500
-                    ${showAll? "max-h-[1000px]": "max-h-[400px]"}
+        className={`grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 lg:overflow-hidden transition-all duration-500 overflow-y-auto
+                    ${showAll? "max-h-[2000px]": "max-h-[400px]"}
         }`}
       >
         {toolsData.map((item, index) => (
           <CardTools key={index} image={item.image} toolName={item.toolName} index={index} />
         ))}
       </div>
-
       {/* Button */}
       <div className="mt-4 text-2xl flex justify-center w-full">
         <button

@@ -18,7 +18,7 @@ const AboutSection = () => {
       scrollTrigger: {
         trigger: sectionRef.current,
         start: "top 60%",
-        end: "bottom 20%",
+        end: "bottom 10%",
         toggleActions: "play none none reset",
         scrub: 1,     
       }
@@ -43,18 +43,18 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className='py-12 px-[12vw] 2xl:px-[16vw] w-full flex flex-col md:flex-row min-h-[100vh] justify-center gap-y-16 md:gap-y-0'>
-      <div ref={aboutIntroRef} className='w-full md:w-1/3 flex flex-col gap-y-4 md:gap-y-8 justify-center md:justify-start '>
-        <div className='text-3xl md:text-6xl font-semibold text-center md:text-start'> Hey! I&apos;m <span className='text-lime-400'> Asim. </span> </div>
-        <div className='text-lg md:text-xl font-light text-center md:text-start'>
+    <section ref={sectionRef} className='py-12 px-[6vw] 2xl:px-[16vw] w-full flex flex-col lg:flex-row min-h-[100vh] justify-center gap-y-16 lg:gap-y-0'>
+      <div ref={aboutIntroRef} className='w-full lg:w-1/3 flex flex-col gap-y-4 lg:gap-y-8 justify-center lg:justify-start '>
+        <div className='text-2xl lg:text-4xl font-semibold text-center lg:text-start'> Hey! I&apos;m <span className='text-lime-400'> Asim. </span> </div>
+        <div className='text-md lg:text-lg font-light text-center lg:text-start'>
           I&apos;m a Sydney-based Frontend Developer who loves designing and developing impactful brands as well as
           building innovative applications with strong emphasis on <span className='text-lime-400 text-2xl'> Product Experience.</span>
         </div>
       </div>
       
-      <div ref={aboutImageRef} className='w-full md:w-1/3 flex justify-center items-center '>
+      <div ref={aboutImageRef} className='w-full lg:w-1/3 flex justify-center items-center '>
         <Image
-          className='aspect-square w-1/2 md:w-2/3 object-cover border-2 border-white rounded-2xl'
+          className='aspect-square w-1/2 lg:w-3/4 object-cover border-2 border-white rounded-2xl'
           src='/aboutHero.jpeg'
           alt='Main Image of Hero Section'
           width={400}
@@ -62,9 +62,9 @@ const AboutSection = () => {
         />
       </div>
       
-      <div ref={aboutOutroRef} className='w-full md:w-1/3 flex flex-col items-center gap-y-4 md:gap-y-2 md:justify-end md:items-end '>
-        <div className='text-2xl md:text-4xl text-end'> Want to know more? </div>
-        <div className='text-xl md:text-2xl flex gap-x-4 items-end'> Scroll Below <FaMouse className='text-lime-400' /> </div>
+      <div ref={aboutOutroRef} className='w-full lg:w-1/3 flex flex-col items-center gap-y-4 lg:gap-y-2 lg:justify-end lg:items-end '>
+        <div className='text-2xl lg:text-3xl font-extrabold text-end'> Want to know more? </div>
+        <div className='text-lg lg:text-2xl flex gap-x-4 items-end'> Scroll Below <FaMouse className='text-lime-400' /> </div>
       </div>
     </section>
   );

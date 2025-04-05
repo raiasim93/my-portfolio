@@ -4,6 +4,7 @@ import Navbar from '@/components/partials/Navbar'
 import React from 'react'
 import AboutSection from './about/AboutSection'
 import QualificationSection from './about/QualificationSection'
+import GallerySection from './about/GallerySection'
 const page = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const page = () => {
     <ToolsSection />
     <AboutSection />
     <QualificationSection/>
+    <GallerySection/>
     </>
   )
 }
