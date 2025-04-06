@@ -19,6 +19,7 @@ const medias = [
 const GallerySection = () => {
     const sectionRef = useRef(null);
     const titleRef = useRef(null);
+    const bentoRef = useRef(null);
    useEffect(()=>{
         const tl = gsap.timeline({
             scrollTrigger: {
@@ -26,7 +27,7 @@ const GallerySection = () => {
                 start: "top 80%",
                 end: "center center",
                 toggleActions: "play none none reset",
-                scrub: true,
+                scrub: 1,
                 markers: true,
             }
         });
@@ -34,6 +35,12 @@ const GallerySection = () => {
             titleRef.current,
             {x: 300, opacity: 0},
             {x: 0, opacity: 1, duration: 1, ease: "power1.out"}
+        );
+        tl.fromTo(
+            bentoRef.current,
+            {y:500, opacity: 0, scale: 2.5},
+            {y:0, opacity:1, scale:1, duration:2, ease:"power1.in"},
+            "-=0.8"
         )
    },[]);
     return (
@@ -42,7 +49,7 @@ const GallerySection = () => {
                 <div className='w-3/4 lg:w-1/2 text-3xl lg:text-6xl font-extrabold '> Running on Passion - whether it is Apps or Football</div>
                 <div className='w-full text-xl lg:text-3xl font-semibold'> My life in Bento and Pics </div>
             </div>
-            <div className='w-full py-4 lg:py-12 min-h-screen  gap-5
+            <div ref={bentoRef} className='w-full py-4 lg:py-12 min-h-screen  gap-5
                              grid grid-cols-2
                               lg:grid-cols-12 lg:grid-rows-6 
                               md:grid-cols-6  md:grid-rows-12
