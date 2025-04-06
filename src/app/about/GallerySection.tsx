@@ -1,5 +1,10 @@
-import React from 'react';
+"use client";
+import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
 const medias = [
     "/rect1.jpg",
     "/wide1.jpg",
@@ -12,9 +17,28 @@ const medias = [
 ]
 
 const GallerySection = () => {
+    const sectionRef = useRef(null);
+    const titleRef = useRef(null);
+   useEffect(()=>{
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: sectionRef.current,
+                start: "top 80%",
+                end: "center center",
+                toggleActions: "play none none reset",
+                scrub: true,
+                markers: true,
+            }
+        });
+        tl.fromTo(
+            titleRef.current,
+            {x: 300, opacity: 0},
+            {x: 0, opacity: 1, duration: 1, ease: "power1.out"}
+        )
+   },[]);
     return (
-        <section className='py-[12vh] px-[6vw] 2xl:px-[16vw]  bg-zinc-900 rounded-2xl'>
-            <div className='w-full flex justify-center flex-col gap-y-4 lg:gap-y-8 lg:justify-between mb-8 lg:mb-16'>
+        <section ref={sectionRef} className='py-[12vh] px-[6vw] 2xl:px-[16vw]  bg-zinc-900 rounded-2xl'>
+            <div ref={titleRef} className='w-full flex justify-center flex-col gap-y-4 lg:gap-y-8 lg:justify-between mb-8 lg:mb-16'>
                 <div className='w-3/4 lg:w-1/2 text-3xl lg:text-6xl font-extrabold '> Running on Passion - whether it is Apps or Football</div>
                 <div className='w-full text-xl lg:text-3xl font-semibold'> My life in Bento and Pics </div>
             </div>
@@ -25,14 +49,14 @@ const GallerySection = () => {
                         '>
                 {medias.map((media, index) => (
                     <div key={index} className={`relative
-                                ${index === 0? "lg:col-span-3 lg:row-span-4 lg:order-1 md:col-span-2 md:row-span-6 md:order-1" : ""}
-                                ${index === 1? "lg:col-span-3 lg:row-span-2 lg:order-2 md:col-span-2 md:row-span-3 md:order-2 ": ""}
-                                ${index === 2? "lg:col-span-3 lg:row-span-4 lg:order-3 md:col-span-2 md:row-span-6 md:order-3": ""}
-                                ${index === 3? "lg:col-span-3 lg:row-span-2 lg:order-4 md:col-span-2 md:row-span-3 md:order-4": ""}
-                                ${index === 4? "lg:col-span-3 lg:row-span-4 lg:order-5 md:col-span-2 md:row-span-6 md:order-5": ""}
-                                ${index === 5? "lg:col-span-3 lg:row-span-4 lg:order-6 md:col-span-2 md:row-span-6 md:order-6": ""}
-                                ${index === 6? "lg:col-span-3 lg:row-span-2 lg:order-7 md:col-span-2 md:row-span-3 md:order-7": ""}
-                                ${index === 7? "lg:col-span-3 lg:row-span-2 lg:order-8 md:col-span-2 md:row-span-3 md:order-8": ""}
+                                ${index === 0 ? "lg:col-span-3 lg:row-span-4 lg:order-1 md:col-span-2 md:row-span-6 md:order-1" : ""}
+                                ${index === 1 ? "lg:col-span-3 lg:row-span-2 lg:order-2 md:col-span-2 md:row-span-3 md:order-2 " : ""}
+                                ${index === 2 ? "lg:col-span-3 lg:row-span-4 lg:order-3 md:col-span-2 md:row-span-6 md:order-3" : ""}
+                                ${index === 3 ? "lg:col-span-3 lg:row-span-2 lg:order-4 md:col-span-2 md:row-span-3 md:order-4" : ""}
+                                ${index === 4 ? "lg:col-span-3 lg:row-span-4 lg:order-5 md:col-span-2 md:row-span-6 md:order-5" : ""}
+                                ${index === 5 ? "lg:col-span-3 lg:row-span-4 lg:order-6 md:col-span-2 md:row-span-6 md:order-6" : ""}
+                                ${index === 6 ? "lg:col-span-3 lg:row-span-2 lg:order-7 md:col-span-2 md:row-span-3 md:order-7" : ""}
+                                ${index === 7 ? "lg:col-span-3 lg:row-span-2 lg:order-8 md:col-span-2 md:row-span-3 md:order-8" : ""}
                              
                             `}>
                         <Image className='rounded-2xl object-cover duration-200 transition-all 
