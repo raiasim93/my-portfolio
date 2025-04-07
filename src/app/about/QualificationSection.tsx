@@ -30,7 +30,7 @@ const QualificationSection = () => {
         
         tl.fromTo(
           card,
-          {x: -150, opacity: 0},
+          {x: -350, opacity: 0},
           {x:0, opacity: 1, duration: 0.8, ease: "power2.out"},
         )
       }

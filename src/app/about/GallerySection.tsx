@@ -28,7 +28,7 @@ const GallerySection = () => {
                 end: "center center",
                 toggleActions: "play none none reset",
                 scrub: 1,
-                markers: true,
+                markers: false,
             }
         });
         tl.fromTo(
@@ -38,8 +38,8 @@ const GallerySection = () => {
         );
         tl.fromTo(
             bentoRef.current,
-            {y:500, opacity: 0, scale: 2.5},
-            {y:0, opacity:1, scale:1, duration:2, ease:"power1.in"},
+            {y:500, opacity: 0, scale: 1.5},
+            {y:0, opacity:1, scale:1, duration:1, ease:"power1.out"},
             "-=0.8"
         )
    },[]);
