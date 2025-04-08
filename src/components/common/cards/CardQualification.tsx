@@ -30,5 +30,5 @@ const CardQualification  = React.forwardRef<HTMLDivElement, CardQualificationPro
     )
 }
 );
-
+CardQualification.displayName = 'CardQualification'
 export default CardQualification
