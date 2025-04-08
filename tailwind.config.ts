@@ -13,7 +13,6 @@ const config: Config = {
       sm: '.875rem',
       tiny: '.875rem',
       base: '1rem',
-      lg: '1.125rem',
       lg: '1.25rem',
       xl: '1.45rem',
       '2xl': '1.5rem',
