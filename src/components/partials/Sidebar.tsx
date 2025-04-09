@@ -21,13 +21,13 @@ const Sidebar = ({ setSidebarOpen }: { setSidebarOpen: (open: boolean) => void }
       />
 
       {/* Sidebar */}
-      <div className="py-8 flex flex-col items-center bg-neutral-900 h-screen fixed top-0 left-0 w-[60%] z-50">
-        <div className='w-full flex justify-end px-8'>
-        <IoClose className='text-2xl  hover:bg-zinc-800 rounded-full cursor-pointer'
+      <div className="py-8 flex flex-col items-center bg-neutral-900 h-screen fixed top-0 left-0 right-0 z-50 px-[6vw]">
+        <div className='w-full flex justify-end h-[80px]'>
+        <IoClose className='text-4xl  hover:bg-zinc-800 rounded-full cursor-pointer'
                  onClick={() => setSidebarOpen(false)} />
         </div>
         
-        <div className='flex flex-col gap-6 text-center text-xl'>
+        <div className='flex flex-col gap-16 2xl:gap-y-16 pb-[80px]  text-4xl min-h-screen w-full justify-center items-center'>
           {["About", "Experience", "Resume", "Contact"].map((item, index) => (
             <a
               key={index}
@@ -39,11 +39,6 @@ const Sidebar = ({ setSidebarOpen }: { setSidebarOpen: (open: boolean) => void }
         </div>
       </div>
       {/* make a sidebar which have very huge heading for each and use gsap for smooth animation */}
-      <div>
-        <div>About</div>
-        <div>Experience</div>
-        <div>Resume</div>
-      </div>
     </div>
   );
 }
