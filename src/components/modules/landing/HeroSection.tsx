@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithub, FaFacebook, FaHandPeace } from 'react-icons/fa';
 
 const HeroSection = () => {
     return (
-        <section className='bg-gradient-to-r to-lime-950 via-zinc-950 min-h-[calc(100vh-80px)]  w-full py-8 px-[6vw] 2xl:px-[16vw] flex flex-col gap-x-8 lg:flex-row justify-center items-center  text-4xl  '>
+        <section className='bg-black min-h-[calc(100vh-80px)]  w-full py-8 px-[6vw] 2xl:px-[16vw] flex flex-col gap-x-8 lg:flex-row justify-center items-center  text-4xl  '>
             {/* Text section */}
             <div className='w-full mb-12 lg:mb-0 lg:w-1/2 flex flex-col lg:flex-col gap-y-6  lg:gap-y-8 text-center lg:text-left '>
                 <div className='text-lg flex items-center justify-center lg:justify-start lg:text-2xl mb-4 lg:mb-0  sm:mb-0  w-full'>
