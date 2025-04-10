@@ -11,12 +11,12 @@ const Navbar = () => {
                       h-[80px] py-8 px-[6vw] 2xl:px-[16vw] font-normal text-xl flex justify-between items-center  '>
         <div className='font-medium italic text-2xl tracking-widest'>raiasim93.</div>
         <div className='hidden lg:flex gap-x-2 lg:gap-x-2  2xl:gap-x-4 tracking-wider'>
-          {["About", "Experience", "Resume", "Contact"].map((item, index)=> (
+          {["About", "Experience", "Resume"].map((item, index)=> (
             <a 
               key={index}
               href=''
-              className={` hover:scale-110 hover:white transition-all duration-200 px-4 py-2 rounded-2xl
-                        ${item === "Contact" && "bg-lime-500 text-white"}`}
+              className={`hover:scale-x-125 hover:white transition-all duration-300 px-4 py-2 rounded-2xl
+                          hover:underline hover:underline-offset-8 decoration-lime-400 hover:font-bold`}
             > 
               {item}
             </a>

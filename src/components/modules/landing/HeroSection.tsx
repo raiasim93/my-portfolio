@@ -8,9 +8,9 @@ const HeroSection = () => {
         <section className='bg-black min-h-[calc(100vh-80px)]  w-full py-8 px-[6vw] 2xl:px-[16vw] flex flex-col gap-x-8 lg:flex-row justify-center items-center  text-4xl  '>
             {/* Text section */}
             <div className='w-full mb-12 lg:mb-0 lg:w-1/2 flex flex-col lg:flex-col gap-y-6  lg:gap-y-8 text-center lg:text-left '>
-                <div className='text-lg flex items-center justify-center lg:justify-start lg:text-2xl mb-4 lg:mb-0  sm:mb-0  w-full'>
+                <div className='text-lg font-bold flex items-center justify-center lg:justify-start lg:text-2xl mb-4 lg:mb-0  sm:mb-0  w-full'>
                 
-                    Welcome to my Portflio <FaHandPeace />
+                    Welcome to my Portflio <FaHandPeace className='ms-3' />
                 </div>
                 <div className='w-full lg:w-3/4 text-4xl lg:text-5xl ' >
                     I am a   <span className='text-lime-500'> Frontend Developer </span> 
