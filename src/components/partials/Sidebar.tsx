@@ -21,7 +21,7 @@ const Sidebar = ({ setSidebarOpen }: { setSidebarOpen: (open: boolean) => void }
       />
 
       {/* Sidebar */}
-      <div className="py-8 flex flex-col items-center bg-neutral-900 h-screen fixed top-0 left-0 right-0 z-50 px-[6vw]">
+      <div className="py-8 flex flex-col items-center bg-neutral-900 text-white h-screen fixed top-0 left-0 right-0 z-50 px-[6vw]">
         <div className='w-full flex justify-end h-[80px]'>
         <IoClose className='text-4xl  hover:bg-zinc-800 rounded-full cursor-pointer'
                  onClick={() => setSidebarOpen(false)} />

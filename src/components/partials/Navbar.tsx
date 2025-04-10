@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
   <>
       <nav className='
-                     bg-black
+                     bg-black text-white
                       h-[80px] py-8 px-[6vw] 2xl:px-[16vw] font-normal text-xl flex justify-between items-center  '>
         <div className='font-medium italic text-2xl tracking-widest'>raiasim93.</div>
         <div className='hidden lg:flex gap-x-2 lg:gap-x-2  2xl:gap-x-4 tracking-wider'>
@@ -15,7 +15,7 @@ const Navbar = () => {
             <a 
               key={index}
               href=''
-              className={`hover:scale-115 hover:white transition-all duration-300 px-4 py-2 rounded-2xl
+              className={`hover:scale-115 hover:white transition-all transition-transform duration-300 px-4 py-2 rounded-2xl
                           hover:underline hover:underline-offset-8 decoration-lime-400 hover:font-bold`}
             > 
               {item}

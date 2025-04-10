@@ -43,7 +43,7 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className='py-12 px-[6vw] 2xl:px-[16vw] w-full flex flex-col lg:flex-row min-h-[100vh] justify-center gap-y-16 lg:gap-y-0'>
+    <section ref={sectionRef} className='py-12 px-[6vw] 2xl:px-[16vw] w-full flex flex-col lg:flex-row min-h-[100vh] justify-center gap-y-16 lg:gap-y-0 text-white'>
       <div ref={aboutIntroRef} className='w-full lg:w-1/3 flex flex-col gap-y-4 lg:gap-y-8 justify-center lg:justify-start '>
         <div className='text-2xl lg:text-4xl font-semibold text-center lg:text-start'> Hey! I&apos;m <span className='text-lime-400'> Asim. </span> </div>
         <div className='text-md lg:text-lg font-light text-center lg:text-start'>
