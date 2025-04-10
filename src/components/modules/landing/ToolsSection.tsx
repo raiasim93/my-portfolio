@@ -8,7 +8,7 @@ const ToolsSection = () => {
   const [showAll, setShowAll] = useState(false);
 
   return (
-    <section className="w-full py-16 px-[6vw] 2xl:px-[16vw] flex flex-col gap-y-8 bg-zinc-900">
+    <section className="bg-black w-full py-16 px-[6vw] 2xl:px-[16vw] flex flex-col gap-y-8 border-b">
       <div className="flex lg:justify-center text-2xl font-semibold lg:text-4xl">
         My Tech Stack
       </div>

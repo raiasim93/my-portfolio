@@ -5,17 +5,16 @@ import { FaLinkedin, FaGithub, FaFacebook, FaHandPeace } from 'react-icons/fa';
 
 const HeroSection = () => {
     return (
-        <section className='bg-black min-h-[calc(100vh-80px)]  w-full py-8 px-[6vw] 2xl:px-[16vw] flex flex-col gap-x-8 lg:flex-row justify-center items-center  text-4xl  '>
+        <section className='bg-gradient-to-b from-black via-lime-700 to-black bg- min-h-[calc(100vh-80px)]  w-full py-8 px-[6vw] 2xl:px-[16vw] flex flex-col gap-x-8 lg:flex-row justify-center items-center  text-4xl  '>
             {/* Text section */}
             <div className='w-full mb-12 lg:mb-0 lg:w-1/2 flex flex-col lg:flex-col gap-y-6  lg:gap-y-8 text-center lg:text-left '>
                 <div className='text-lg font-bold flex items-center justify-center lg:justify-start lg:text-2xl mb-4 lg:mb-0  sm:mb-0  w-full'>
-                
                     Welcome to my Portflio <FaHandPeace className='ms-3' />
                 </div>
                 <div className='w-full lg:w-3/4 text-4xl lg:text-5xl ' >
                     I am a   <span className='text-lime-500'> Frontend Developer </span> 
                 </div>
-                <div className='text-md lg:text-lg text-gray-400 lg:flex hidden '>
+                <div className='text-md lg:text-lg text-white lg:flex hidden '>
                     I turn ideas into interactive realities and craft product experience that solve real-world problems. Let&apos;s bring vision to your life!!
                 </div>
 
@@ -45,7 +44,7 @@ const HeroSection = () => {
                     alt='Image for hero section'
                     width={120}
                     height={120}
-                    className='aspect-square object-cover rounded-4xl border-4 lg:border-6 border-white w-2/3 lg:w-[80%]'
+                    className='aspect-square object-cover rounded-4xl border-4 lg:border-6 border-white w-2/3 lg:w-[70%]'
                     quality={100}
                 />
                 {/* <div className='grid-cols-8 gap-x-4 min-h-screen'>
