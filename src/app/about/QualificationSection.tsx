@@ -37,7 +37,7 @@ const QualificationSection = () => {
     })
   })
   return (
-    <section ref={qualificationSectionRef} className='py-12 px-[6vw] 2xl:[16vw] flex flex-col gap-y-16 justify-center items-center w-full min-h-screen text-white'>
+    <section ref={qualificationSectionRef} className='py-12 px-[6vw] 2xl:[16vw] flex flex-col gap-y-16 justify-center items-center w-full min-h-screen '>
       <div ref={titleRef} className='text-2xl lg:text-5xl'>
          Qualifications over the years
       </div>

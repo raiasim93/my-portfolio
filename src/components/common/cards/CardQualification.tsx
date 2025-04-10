@@ -12,7 +12,7 @@ interface CardQualificationProps{
 const CardQualification  = React.forwardRef<HTMLDivElement, CardQualificationProps> (({school, degree, date, id}, ref) => {
     return (
         <div ref={ref}
-             key={id} className='text-white w-[60%] lg:w-[40%] border-4 rounded-2xl p-8 min-h-[288px] border-l-4 border-l-lime-500 
+             key={id} className='w-[60%] lg:w-[40%] border-4 rounded-2xl p-8 min-h-[288px] border-l-4 border-l-lime-500 
                                 border-t-lime-500 flex flex-col gap-y-4 justify-center items-center
                                  transition-all transform duration-300
                                 hover:scale-95 hover:bg-zinc-900 cursor-pointer'>
