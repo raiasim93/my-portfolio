@@ -1,18 +1,36 @@
-import React from 'react';
+"use client"
+import React, {useEffect, useRef} from 'react';
 import Image from 'next/image';
 import { BiRightArrowAlt } from 'react-icons/bi';
-import { FaLinkedin, FaGithub, FaFacebook, FaHandPeace } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaFacebook, FaArrowDown } from 'react-icons/fa';
+import gsap from 'gsap';
 
 const HeroSection = () => {
+    const arrowRef = useRef(null);
+    useEffect(()=>{
+        if(arrowRef.current){
+          gsap.to(arrowRef.current,{
+            y: 5,
+            duration: 1,
+            repeat: -1,
+            yoyo: true,
+            ease: "power1.inOut"
+          });
+        }
+    }, []);
     return (
         <section className='bg-gradient-to-b from-black via-lime-700 to-black bg- min-h-[calc(100vh-80px)]  w-full py-8 px-[6vw] 2xl:px-[16vw] flex flex-col gap-x-8 lg:flex-row justify-center items-center  text-4xl  '>
             {/* Text section */}
             <div className='w-full mb-12 lg:mb-0 lg:w-1/2 flex flex-col lg:flex-col gap-y-6  lg:gap-y-8 text-center lg:text-left '>
-                <div className='text-lg font-bold flex items-center justify-center lg:justify-start lg:text-2xl mb-4 lg:mb-0  sm:mb-0  w-full'>
-                    Welcome to my Portflio <FaHandPeace className='ms-3' />
+                <div className='text-lg font-bold flex items-center justify-center lg:justify-start lg:text-3xl mb-4 lg:mb-0  sm:mb-0  w-full'>
+                    Welcome to my Creation
+                    <div ref={arrowRef}>
+                    <FaArrowDown  className='ms-3'/>
+                    </div>
+                   
                 </div>
-                <div className='w-full lg:w-3/4 text-4xl lg:text-5xl ' >
-                    I am a   <span className='text-lime-500'> Frontend Developer </span> 
+                <div className='w-full  lg:w-3/4 text-4xl lg:text-7xl ' >
+                    I am a   <span className='text-lime-400'> Frontend Developer </span> 
                 </div>
                 <div className='text-md lg:text-lg text-white lg:flex hidden '>
                     I turn ideas into interactive realities and craft product experience that solve real-world problems. Let&apos;s bring vision to your life!!
@@ -20,8 +38,8 @@ const HeroSection = () => {
 
                 <div className='w-full flex flex-wrap gap-y-6 justify-center lg:justify-between items-center'>
                     {/* Explore More Button */}
-                    <div className='group flex items-center bg-neutral-700 border border-white text-white px-6 py-2 rounded-full 
-                        transition-all duration-200 hover:bg-lime-500 hover:scale-110 hover:border-2 hover:border-white hover:cursor-pointer
+                    <div className='group flex font-semibold items-center bg-black border border-white text-white px-6 py-2 rounded-full 
+                        transition-all duration-200 hover:bg-lime-400 hover:scale-110 hover:border-2 hover:border-white hover:cursor-pointer
                         text-lg lg:text-xl whitespace-nowrap'>
                         Explore More
                         <BiRightArrowAlt className='text-2xl lg:text-4xl transition-all duration-200 group-hover:translate-x-1.5 ' />

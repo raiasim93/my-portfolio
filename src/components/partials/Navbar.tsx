@@ -15,7 +15,7 @@ const Navbar = () => {
             <a 
               key={index}
               href=''
-              className={`hover:scale-x-125 hover:white transition-all duration-300 px-4 py-2 rounded-2xl
+              className={`hover:scale-115 hover:white transition-all duration-300 px-4 py-2 rounded-2xl
                           hover:underline hover:underline-offset-8 decoration-lime-400 hover:font-bold`}
             > 
               {item}
