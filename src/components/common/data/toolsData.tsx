@@ -56,15 +56,6 @@ const toolsData = [
     },
     {
         id: "7",
-        toolName: "Azios",
-        image: <Image src={'/Azios.png'}
-            className='aspect-square object-cover w-20 h-20'
-            alt='React Icon image'
-            width={40}
-            height={40} />
-    },
-    {
-        id: "8",
         toolName: "React Bootstrap",
         image: <Image src={'/React Bootstrap.png'}
             className='aspect-square object-cover w-20 h-20'
@@ -73,7 +64,7 @@ const toolsData = [
             height={40} />
     },
     {
-        id: "9",
+        id: "8",
         toolName: "GitHub",
         image: <Image src={'/GitHub.png'}
             className='aspect-square object-cover w-20 h-20'
@@ -82,7 +73,7 @@ const toolsData = [
             height={40} />
     },
     {
-        id: "10",
+        id: "9",
         toolName: "Figma",
         image: <Image src={'/Figma.png'}
             className='aspect-square object-cover w-20 h-20'
@@ -91,7 +82,7 @@ const toolsData = [
             height={40} />
     },
     {
-        id: "11",
+        id: "10",
         toolName: "HTML5",
         image: <Image src={'/HTML5.png'}
             className='aspect-square object-cover w-20 h-20'
@@ -100,7 +91,7 @@ const toolsData = [
             height={40} />
     },
     {
-        id: "12",
+        id: "11",
         toolName: "CSS3",
         image: <Image src={'/CSS3.png'}
             className='aspect-square object-cover w-20 h-20'
@@ -109,7 +100,7 @@ const toolsData = [
             height={40} />
     },
     {
-        id: "13",
+        id: "12",
         toolName: "Jira",
         image: <Image src={'/Jira.png'}
             className='aspect-square object-cover w-20 h-20'
