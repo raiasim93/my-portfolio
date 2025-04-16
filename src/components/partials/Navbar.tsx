@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
   <>
       <nav className='
-                     bg-black text-white
+                     bg-zinc-950 text-white
                       h-[80px] py-8 px-[6vw] 2xl:px-[16vw] font-normal text-xl flex justify-between items-center  '>
         <div className='font-medium italic text-2xl tracking-widest'>raiasim93.</div>
         <div className='hidden lg:flex gap-x-2 lg:gap-x-2  2xl:gap-x-4 tracking-wider'>
