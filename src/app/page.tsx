@@ -5,6 +5,7 @@ import React from 'react'
 import AboutSection from './about/AboutSection'
 import GallerySection from './about/GallerySection'
 import QualificationSection from './experience/QualificationSection'
+import FooterSection from '@/components/partials/FooterSection'
 const page = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const page = () => {
     <QualificationSection/>
     <AboutSection />
     <GallerySection/>
+    <FooterSection/>
     </>
   )
 }
