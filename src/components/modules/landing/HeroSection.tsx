@@ -39,11 +39,11 @@ const HeroSection = () => {
 
                 <div className='w-full flex flex-wrap gap-y-6 justify-center lg:justify-between items-center'>
                     {/* Explore More Button */}
-                    <div className='group flex font-semibold items-center bg-black border border-white text-white px-6 py-2 rounded-full 
-                        transition-all duration-200 hover:bg-lime-400 hover:scale-110 hover:border-2 hover:border-white hover:cursor-pointer
+                    <div className='group flex font-semibold items-center  text-lime-500 px-6 py-2 
+                        transition-all duration-200 hover:scale-110  hover:cursor-pointer
                         text-lg lg:text-xl whitespace-nowrap'>
                         Explore More
-                        <BiRightArrowAlt className='text-2xl lg:text-4xl transition-all duration-200 group-hover:translate-x-1.5 ' />
+                        <BiRightArrowAlt className='text-2xl lg:text-4xl transition-all duration-300 group-hover:translate-x-4 ' />
                     </div>
 
                     {/* Social Icons */}
@@ -63,16 +63,9 @@ const HeroSection = () => {
                     alt='Image for hero section'
                     width={120}
                     height={120}
-                    className='aspect-square object-cover rounded-4xl border-4 lg:border-6 border-white w-2/3 lg:w-[70%]'
+                    className='aspect-square object-cover rounded-2xl border-2 lg:border-4 border-white w-2/3 lg:w-[70%]'
                     quality={100}
                 />
-                {/* <div className='grid-cols-8 gap-x-4 min-h-screen'>
-                   <div className='col-span-1 bg-zinc-900'>1 </div>
-                   <div className='col-span-1 bg-zinc-900'>2 </div>
-                   <div className='col-span-4 bg-zinc-900'>3 </div>
-                   <div className='col-span-1 bg-zinc-900'> 4</div>
-                   <div className='col-span-1 bg-zinc-900'>5 </div>
-                </div> */}
             </div>
 
         </section>
