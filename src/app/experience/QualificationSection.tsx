@@ -14,8 +14,8 @@ const QualificationSection = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: qualificationSectionRef.current,
-        start: "top 75%",
-        end:"center 60%",
+        start: "top 80%",
+        end: "bottom 75%",
         toggleActions: "play none none reset",
         scrub: true,
         
@@ -39,7 +39,7 @@ const QualificationSection = () => {
   })
   return (
     <section ref={qualificationSectionRef} className='bg-black py-12 px-[6vw] 2xl:[16vw] flex flex-col gap-y-16 justify-center items-center w-full min-h-screen '>
-      <div ref={titleRef} className='text-2xl lg:text-5xl'>
+      <div ref={titleRef} className='text-4xl lg:text-8xl text-center font-semibold'>
          Qualifications over the years
       </div>
       <div className='flex flex-col gap-y-8 justify-center items-center h-full w-full'>
