@@ -11,8 +11,8 @@ const HeroSection = () => {
         if(arrowRef.current){
           gsap.to(arrowRef.current,{
             y: 5,
-            scale: 1.2,
-            duration: 1,
+            scale: 1.8,
+            duration: 1.6,
             repeat: -1,
             yoyo: true,
             ease: "power1.inOut"

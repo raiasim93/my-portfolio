@@ -15,10 +15,9 @@ const QualificationSection = () => {
       scrollTrigger: {
         trigger: qualificationSectionRef.current,
         start: "top 80%",
-        end: "bottom 75%",
+        end: "center center",
         toggleActions: "play none none reset",
         scrub: true,
-        
       }
     });
     tl.fromTo(
