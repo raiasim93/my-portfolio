@@ -17,28 +17,28 @@ const AboutSection = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: "top 60%",
-        end: "bottom bottom",
+        start: "top 80%",
+        end: "bottom 90%",
         toggleActions: "play none none reset",
         scrub: 1,    
       }
     });
     tl.fromTo(
       aboutIntroRef.current,
-      {x: 50, opacity: 0},
+      {x: -500, opacity: 0},
       {x: 0, opacity: 1, duration: 1.2, ease:"power1.out"}
     )
     tl.fromTo(
       aboutImageRef.current,
-      {x: 100, opacity: 0},
+      {x: -500, opacity: 0},
       {x: 0, opacity: 1, duration: 1.4, ease:"power1.out"},
-      "-=1"
+      "-=1.2"
     )
     tl.fromTo(
       aboutOutroRef.current,
-      {x:100, opacity: 0},
-      {x:0, opacity: 1, duration: 1.6, ease: "power1.out"},
-      "-=0.8"
+      {x: -500, opacity: 0},
+      {x:0, opacity: 1, duration: 1, ease: "power1.out"},
+      "-=1"
     )
   }, []);
 
