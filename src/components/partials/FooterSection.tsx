@@ -29,7 +29,7 @@ const FooterSection = () => {
           Let&apos;s Chat
         </span>
         <span className={`absolute inset w-full duration-500 transition-all ease-in-out flex justify-center items-center  ${hovered ? 'translate-x-0 opacity-100' : 'translate-x-0 opacity-0'}`}>
-          Click to Chat
+          Click to shoot a Mail
         </span>
 
       </div>
