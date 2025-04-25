@@ -10,8 +10,8 @@ const HeroSection = () => {
     useEffect(()=>{
         if(arrowRef.current){
           gsap.to(arrowRef.current,{
-            y: 5,
-            scale: 1.8,
+            y: 2,
+            scale: 1.2,
             duration: 1.6,
             repeat: -1,
             yoyo: true,
