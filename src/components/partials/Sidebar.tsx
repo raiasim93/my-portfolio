@@ -27,8 +27,8 @@ const Sidebar = ({ setSidebarOpen }: { setSidebarOpen: (open: boolean) => void }
                  onClick={() => setSidebarOpen(false)} />
         </div>
         
-        <div className='flex flex-col gap-16 2xl:gap-y-16 pb-[80px]  text-4xl min-h-screen w-full justify-center items-center'>
-          {["About", "Experience", "Resume", "Contact"].map((item, index) => (
+        <div className='flex flex-col gap-8 2xl:gap-y-16 pb-[80px]  text-4xl lg:text-6xl min-h-screen w-full justify-center items-center'>
+          {["About", "Experience", "Resume"].map((item, index) => (
             <a
               key={index}
               href=''
@@ -38,7 +38,6 @@ const Sidebar = ({ setSidebarOpen }: { setSidebarOpen: (open: boolean) => void }
           ))}
         </div>
       </div>
-      {/* make a sidebar which have very huge heading for each and use gsap for smooth animation */}
     </div>
   );
 }
