@@ -25,10 +25,10 @@ const FooterSection = () => {
         onClick={handleSectionClick}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}>
-        <span className={`absolute inset w-full duration-500 ease-in-out uppercase flex justify-center items-center ${hovered ? '-translate-x-full opacity-0' : 'translate-x-0 opacity-100'}`}>
+        <span className={`absolute inset  duration-500 transition-all ease-in-out uppercase flex justify-center items-center ${hovered ? '-translate-x-full opacity-0' : 'translate-x-0 opacity-100'}`}>
           Let&apos;s Chat
         </span>
-        <span className={`absolute inset w-full duration-500 transition-all ease-in-out flex justify-center items-center  ${hovered ? 'translate-x-0 opacity-100' : 'translate-x-0 opacity-0'}`}>
+        <span className={`absolute inset  duration-500 transition-all ease-in-out flex justify-center items-center  ${hovered ? 'translate-x-0 opacity-100' : 'translate-x-0 opacity-0'}`}>
           Click to shoot a Mail
         </span>
 
