@@ -13,7 +13,7 @@ const ToolsSection = () => {
         My Tech Stack
       </div>
       <div className="text-gray-400 w-full text-left lg:w-1/2 lg:mx-auto lg:text-center lg:text-xl">
-        Here are the development tools I specialize in and will be using to make your website both visually appealing and fully functional. 🚀
+        Here are the development tools I specialize in and will be using to make your ideas and vision into life. 🚀
       </div>
 
       {/* Tools Grid with Smooth Expansion */}
