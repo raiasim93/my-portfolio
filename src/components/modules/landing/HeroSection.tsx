@@ -26,7 +26,7 @@ const HeroSection = () => {
                 <div className='text-lg font-bold flex items-center justify-center lg:justify-start lg:text-3xl mb-4 lg:mb-0  sm:mb-0  w-full'>
                     Welcome to my Creation
                     <div ref={arrowRef}>
-                    <FaArrowDown  className='ms-3'/>
+                    <FaArrowDown  className='ms-3 text-lime-500'/>
                     </div>
                    
                 </div>
