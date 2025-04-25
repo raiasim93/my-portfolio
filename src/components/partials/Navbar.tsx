@@ -1,33 +1,54 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { RxHamburgerMenu } from "react-icons/rx";
+import { RiStarSLine } from "react-icons/ri";
 import Sidebar from './Sidebar';
+import gsap from 'gsap';
+
 const Navbar = () => {
-    const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const starRef = useRef(null);
+  useEffect(()=> {
+    if(starRef.current){
+      gsap.to(starRef.current, {
+        scale: 1.6,
+        duration: 1.6,
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut"
+      })
+    }
+  }, [])
   return (
-  <>
+    <>
       <nav className='
                    bg-black text-white
                       h-[80px] py-8 px-[6vw] 2xl:px-[16vw] font-normal text-xl flex justify-between items-center  '>
-        <div className='font-medium  text-2xl tracking-widest'>raiasim93.</div>
-        {/* <div className='hidden lg:flex gap-x-2 lg:gap-x-2  2xl:gap-x-4 tracking-wider'>
-          {["About", "Experience", "Resume"].map((item, index)=> (
-            <a 
-              key={index}
-              href=''
-              className={`hover:scale-115 hover:white transition-all duration-300 px-4 py-2 rounded-2xl
-                          hover:underline hover:underline-offset-8 decoration-lime-400 hover:font-bold`}
-            > 
-              {item}
-            </a>
-          ))}
-           
-        </div> */}
-        <RxHamburgerMenu onClick={()=> setSidebarOpen(true)} className={`text-4xl p-1 hover:bg-zinc-800 transition-300 ease-in-out rounded-full cursor-pointer ${sidebarOpen ? "hidden": ""}`} />
-       
-    </nav>
-     {sidebarOpen && <Sidebar setSidebarOpen={setSidebarOpen} /> }
-  </>
+        <div className='flex gap-x-[2px] items-center'>
+          <div className='font-medium  text-2xl tracking-widest'>raiasim93 </div>
+          {/* <div className='hidden lg:flex gap-x-2 lg:gap-x-2  2xl:gap-x-4 tracking-wider'>
+            {["About", "Experience", "Resume"].map((item, index)=> (
+              <a 
+                key={index}
+                href=''
+                className={`hover:scale-115 hover:white transition-all duration-300 px-4 py-2 rounded-2xl
+                            hover:underline hover:underline-offset-8 decoration-lime-400 hover:font-bold`}
+              > 
+                {item}
+              </a>
+            ))}
+            
+          </div> */}
+          <div ref={starRef}> 
+            <RiStarSLine className='text-2xl text-lime-500' />
+          </div>
+        </div>
+        
+        <RxHamburgerMenu onClick={() => setSidebarOpen(true)} className={`text-4xl p-1 hover:bg-zinc-800 transition-300 ease-in-out rounded-full cursor-pointer ${sidebarOpen ? "hidden" : ""}`} />
+
+      </nav>
+      {sidebarOpen && <Sidebar setSidebarOpen={setSidebarOpen} />}
+    </>
 
   )
 }
