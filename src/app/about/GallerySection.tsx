@@ -46,7 +46,7 @@ const GallerySection = () => {
     return (
         <section ref={sectionRef} className='py-[12vh] px-[6vw] 2xl:px-[16vw]  bg-zinc-900 '>
             <div ref={titleRef} className='w-full flex justify-center flex-col gap-y-4 lg:gap-y-8 lg:justify-between mb-8 lg:mb-16'>
-                <div className='w-3/4 lg:w-1/2 text-3xl lg:text-6xl font-extrabold '> Running on Passion - whether it is Apps or Football</div>
+                <div className='w-3/4 lg:w-2/3 text-3xl lg:text-6xl font-extrabold '> Running on Passion - whether it is building Apps or  Football</div>
                 <div className='w-full text-xl lg:text-3xl font-semibold'> My life in Bento and Pics </div>
             </div>
             <div ref={bentoRef} className='w-full py-4 lg:py-12 min-h-screen  gap-5
@@ -67,7 +67,7 @@ const GallerySection = () => {
                              
                             `}>
                         <Image className='rounded-2xl object-cover duration-200 transition-all 
-                                         cursor-pointer hover:shadow-2xl hover:shadow-lime-400 hover:scale-105
+                                         cursor-pointer hover:shadow-2xl hover:shadow-zinc-400 hover:scale-105
                                          hover:border-white hover:border-4' fill alt={`image ${index}`} src={media} />
                     </div>
                 ))}
