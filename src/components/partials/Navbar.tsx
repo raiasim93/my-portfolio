@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useRef, useEffect } from 'react';
-import { RxHamburgerMenu } from "react-icons/rx";
+import { IconMenu3, IconX } from '@tabler/icons-react';
 import { RiStarSLine } from "react-icons/ri";
 import Sidebar from './Sidebar';
 import gsap from 'gsap';
@@ -44,8 +44,12 @@ const Navbar = () => {
           </div>
         </div>
         
-        <RxHamburgerMenu onClick={() => setSidebarOpen(true)} className={`text-4xl p-1 hover:bg-zinc-800 transition-300 ease-in-out rounded-full cursor-pointer ${sidebarOpen ? "hidden" : ""}`} />
-
+        <div className='text-white p-2 rounded-full hover:bg-zinc-700  cursor-pointer duration-200 transition-all'
+              onClick={()=> setSidebarOpen(!sidebarOpen)} >
+               {sidebarOpen ? 
+               <IconX className='w-8 h-8 hover:scale-95'/> 
+               : <IconMenu3 className='w-8 h-8 hover:scale-95'/>}
+        </div>
       </nav>
       {sidebarOpen && <Sidebar setSidebarOpen={setSidebarOpen} />}
     </>
