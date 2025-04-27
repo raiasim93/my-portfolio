@@ -23,17 +23,17 @@ const HeroSection = () => {
         <section className='bg-black bg- min-h-[calc(100vh-80px)]  w-full py-8 px-[6vw] 2xl:px-[16vw] flex flex-col gap-x-8 lg:flex-row justify-center items-center  text-4xl  '>
             {/* Text section */}
             <div className='w-full mb-12 lg:mb-0 lg:w-1/2 flex flex-col lg:flex-col gap-y-6  lg:gap-y-8 text-center lg:text-left '>
-                <div className='text-lg font-bold flex items-center justify-center lg:justify-start lg:text-3xl mb-4 lg:mb-0  sm:mb-0  w-full'>
-                    Welcome to my Creation
+                <div className='font-bold flex items-center justify-center lg:justify-start text-xl  lg:text-5xl tracking-wider leading-tight mb-4 lg:mb-0  sm:mb-0  w-full'>
+                    Asim is engineering greatness from scratch.. 
                     <div ref={arrowRef}>
                     <FaArrowDown  className='ms-3 text-lime-500'/>
                     </div>
                    
                 </div>
-                <div className='w-full  lg:w-3/4 text-4xl lg:text-7xl ' >
+                {/* <div className='w-full  lg:w-3/4 text-4xl lg:text-7xl ' >
                     I am a   <span className='text-lime-400'> Frontend Developer </span> 
-                </div>
-                <div className='text-md lg:text-lg text-white lg:flex hidden '>
+                </div> */}
+                <div className='text-lg lg:text-xl w-full text-white lg:flex hidden pe-10'>
                     I turn ideas into interactive realities and craft product experience that solve real-world problems. Let&apos;s bring vision to your life!!
                 </div>
 
