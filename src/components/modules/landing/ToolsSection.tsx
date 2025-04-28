@@ -19,7 +19,7 @@ const ToolsSection = () => {
       {/* Tools Grid with Smooth Expansion */}
       <div
         className={`grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 lg:overflow-hidden transition-all duration-500 overflow-y-auto
-                    ${showAll? "max-h-[2000px]": "max-h-[400px]"}
+                    ${showAll? "max-h-[2000px]": "max-h-[200px]"}
         }`}
       >
         {toolsData.map((item, index) => (
