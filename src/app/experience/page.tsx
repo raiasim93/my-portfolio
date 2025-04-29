@@ -6,7 +6,6 @@ import QualificationSection from './QualificationSection'
 const page = () => {
   return (
    <>
-    <Navbar/>
     <ToolsSection/>
     <QualificationSection/>
    </>
