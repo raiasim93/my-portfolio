@@ -9,13 +9,11 @@ import FooterSection from '@/components/partials/FooterSection'
 const page = () => {
   return (
     <>
-    <Navbar />
     <HeroSection />
     <ToolsSection />
     <QualificationSection/>
     <AboutSection />
     <GallerySection/>
-    <FooterSection/>
     </>
   )
 }
