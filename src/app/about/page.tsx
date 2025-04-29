@@ -6,7 +6,6 @@ import GallerySection from './GallerySection';
 const page = () => {
   return (
     <>
-        <Navbar />
         <AboutSection />
         <GallerySection/>
     </>
