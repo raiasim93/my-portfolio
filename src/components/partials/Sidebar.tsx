@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Link from 'next/link';
 const Sidebar = ({ setSidebarOpen }: { setSidebarOpen: (open: boolean) => void }) => {
 
   useEffect(() => {
@@ -16,12 +17,12 @@ const Sidebar = ({ setSidebarOpen }: { setSidebarOpen: (open: boolean) => void }
       <div className="py-8 flex flex-col justify-center items-center bg-black min-h-screen text-white px-[6vw]">
         <div className='flex flex-col gap-8 lg:gap-y-20 pb-[80px]  text-4xl lg:text-6xl  w-full justify-center items-center'>
           {["About", "Experience", "Resume"].map((item, index) => (
-            <a
+            <Link
               key={index}
-              href=''
+              href={`/${item.toLowerCase()}`}
               className=' relative hover:text-zinc-400 hover:scale-105 transition-all duration-200 border-b border-white hover:border-lime-500 pb-2' >
               {item}
-            </a>
+            </Link>
           ))}
         </div>
       </div>
