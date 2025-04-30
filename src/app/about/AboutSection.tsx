@@ -17,10 +17,11 @@ const AboutSection = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: "top 80%",
-        end: "bottom 90%",
+        start: "top 40%",
+        end: "center 75%",
         toggleActions: "play none none reset",
-        scrub: 1,    
+        scrub: 1,
+        markers: true,   
       }
     });
     tl.fromTo(
