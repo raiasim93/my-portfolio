@@ -1,7 +1,11 @@
-import React from 'react';
+'use client'
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 
 const ProjectSection = () => {
+  useEffect(()=> {
+    alert("Full functionality is still a work in progress");
+  }, []);
   const projects = [
     {
       projectId: 1,
@@ -43,14 +47,14 @@ const ProjectSection = () => {
       <div className='max-w-7xl rounded-2xl flex flex-col gap-y-16'>
         {/* project card starts here */}
         {projects.map((item,index)=> (
-          <div key={index} className={`flex flex-col lg:flex-row bg-zinc-950
+          <div key={index} className={`flex flex-col lg:flex-row bg-zinc-950 rounded-2xl
                                        ${index % 2 === 0 ? 'lg:flex-row-reverse': ''} `}>
-          <div className='w-full lg:w-1/2 aspect-[12/9] lg:auto relative rounded-2xl overflow-hidden'>
+          <div className='w-full lg:w-1/2 aspect-[12/9] lg:auto relative rounded-2xl overflow-hidden '>
             <Image
               fill
               alt={item.image.imageAlt}
               src={item.image.source}
-              className='object-contain p-0 lg:p-8 rounded-2xl'
+              className='object-contain p-8 rounded-2xl'
             />
           </div>
           <div className='w-full lg:w-1/2 flex flex-col justify-center gap-y-8 p-8'>
