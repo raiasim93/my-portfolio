@@ -16,7 +16,7 @@ const Sidebar = ({ setSidebarOpen }: { setSidebarOpen: (open: boolean) => void }
       {/* Sidebar */}
       <div className="py-8 flex flex-col justify-center items-center bg-black min-h-screen text-white px-[6vw]">
         <div className='flex flex-col gap-8 lg:gap-y-20 pb-[80px]  text-4xl lg:text-6xl  w-full justify-center items-center'>
-          {["About", "Experience", "Resume"].map((item, index) => (
+          {["About", "Projects", "Resume"].map((item, index) => (
             <Link
               key={index}
               onClick={()=> setSidebarOpen(false)}
