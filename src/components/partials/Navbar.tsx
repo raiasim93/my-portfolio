@@ -25,7 +25,7 @@ const Navbar = () => {
       <nav className='
                    bg-black text-white
                       h-[80px] py-8 px-[6vw] 2xl:px-[16vw] font-normal text-xl flex justify-between items-center  '>
-        <div className='flex gap-x-[2px] items-center'>
+        <div className='flex gap-x-4 items-center'>
           <Link href='/' className='font-medium  text-2xl tracking-widest'>raiasim93 </Link>
          
           <div ref={starRef}> 
