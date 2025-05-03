@@ -35,7 +35,7 @@ const ProjectSection = () => {
             <div className='w-[80%] mx-auto flex flex-col gap-y-4 justify-center'> 
                
                 <p className='text-md text-gray-400'>
-                    Tempweather is an app that will help you inspect real time weather of your desired location. Search for weather in any cities of the world you'd like. All you have to do is few simple steps, Type and Click !
+                    Tempweather is an app that will help you inspect real time weather of your desired location. Search for weather in any cities of the world you&339;d like. All you have to do is few simple steps, Type and Click !
                 </p>
                 <div className='lg:flex  gap-x-4'>
                   <div className='decoration-wavy underline-offset-4 underline text-xl my-4'> Want to try it yourself? </div>

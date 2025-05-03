@@ -7,7 +7,6 @@ import dayjs from 'dayjs';
 const FooterSection = () => {
   const today = dayjs().format('YYYY-MM-DD');
   const [hovered, setHovered] = useState(false);
-  const hoverRef = useRef(null);
   const handleSectionClick = (event: React.MouseEvent<HTMLDivElement>) => {
     const target = event.target;
     if (
