@@ -1,68 +1,83 @@
-'use client'
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
-import { FaArrowLeft } from 'react-icons/fa';
-import gsap from 'gsap';
-const ProjectSection = () => {
-  const liveDemoRef = useRef(null);
-  useEffect(()=> {
-    if(liveDemoRef.current){
-      gsap.to(liveDemoRef.current,{
-        translateX: "10px",
-        duration: 1,
-        scale: 1.25,
-        repeat: -1,
-        yoyo: true,
-        ease: "power1.inOut"
-      })
-    }
-  })
-  return (
-  <section className='bg-black py-8 px-[6vw] 2xl:px-[16vw] min-h-screen flex flex-col gap-y-16'>
-    <div className='text-4xl lg:text-6xl '>
-      My Latest Works
-    </div>
-    <div className='flex  flex-col justify-between gap-8 min-h-screen bg-zinc-950'>
-        <div className=' w-full p-8 flex flex-col gap-y-8 gap-x-8  '> 
-        <h1 className='text-3xl lg:text-5xl font-extrabold w-[80%] mx-auto text-center'> TempWeather </h1>
-            <div className='w-[80%] flex justify-center mx-auto'> 
-                <Image alt='project thumbnail' 
-                    width={800}
-                    height={800}
-                    src='/tempweather-thumbnail.png'
-                    className='object-contain aspect-[3/2]' />
-            </div>
-            <div className='w-[80%] mx-auto flex flex-col gap-y-4 justify-center'> 
-               
-                <p className='text-md text-gray-400'>
-                    Tempweather is an app that will help you inspect real time weather of your desired location. Search for weather in any cities of the world you&339;d like. All you have to do is few simple steps, Type and Click !
-                </p>
-                <div className='lg:flex  gap-x-4'>
-                  <div className='decoration-wavy underline-offset-4 underline text-xl my-4'> Want to try it yourself? </div>
-                  <button className='bg-zinc-700 flex justify-center items-center gap-x-4 rounded-2xl border py-2 px-8 w-fit text-lg hover:scale-110'> Live Demo <FaArrowLeft /> </button>
-                </div>
-               
-             </div>
-             <div className='w-[80%] mx-auto flex flex-col gap-y-4'>
-                  <div className='text-xl font-semibold'> Tools Used </div>
-                  <div className='flex gap-x-4' >
-                    <button className='bg-lime-500 border py-2 px-6 rounded-2xl'> 
-                        React
-                     </button>
-                    <button className='bg-lime-500 border  py-2 px-6 rounded-2xl'> 
-                        React
-                     </button>
-                    <button className='bg-lime-500  py-2 px-6 rounded-2xl'> 
-                        React
-                     </button>
-                   
-                  </div>
-            </div>
-        </div>
-    
-     </div>
 
-</section> 
+const ProjectSection = () => {
+  const projects = [
+    {
+      projectId: 1,
+      image: {
+        imageAlt: 'Tempweather App',
+        source: '/tempweather-thumbnail.png'
+      },
+      projectName: 'Tempweather',
+      projectDescription: 'A real-time weather forecast app with hourly and weekly predictions.',
+      projectTools: ['React', 'Openweather API', 'Bootstrap'],
+      projectLiveSite: ''
+    },
+    {
+      projectId: 2,
+      image: {
+        imageAlt: 'DailyNest',
+        source: '/dailynest-thumbnail.png'
+      },
+      projectName: 'DailyNest',
+      projectDescription: 'DailyNest is a minimalist to-do list app built for quick task capture, daily planning, and simple habit tracking—all in one streamlined interface.',
+      projectTools: ['React', 'Openweather API', 'Bootstrap'],
+      projectLiveSite: ''
+    },
+    {
+      projectId: 3,
+      image: {
+        imageAlt: 'QRifyyy',
+        source: '/qr-thumbnail.png'
+      },
+      projectName: `QR'ifyy`,
+      projectDescription: `QR'ifyy is a sleek QR code generator that lets users create scannable codes for Wi-Fi credentials and web links—ideal for quick sharing with zero hassle.'`,
+      projectTools: ['React', 'Openweather API', 'Bootstrap'],
+      projectLiveSite: ''
+    },
+  ]
+  return (
+    <section className='bg-black min-h-screen  px-[6vw] 2xl:px-[16vw]'>
+      <h1 className='flex justify-center py-12 text-2xl lg:text-4xl'> Latest Projectas </h1>
+      <div className='max-w-7xl rounded-2xl flex flex-col gap-y-16'>
+        {/* project card starts here */}
+        {projects.map((item,index)=> (
+          <div key={index} className={`flex flex-col lg:flex-row bg-zinc-950
+                                       ${index % 2 === 0 ? 'lg:flex-row-reverse': ''} `}>
+          <div className='w-full lg:w-1/2 aspect-[12/9] lg:auto relative rounded-2xl overflow-hidden'>
+            <Image
+              fill
+              alt={item.image.imageAlt}
+              src={item.image.source}
+              className='object-contain p-0 lg:p-8 rounded-2xl'
+            />
+          </div>
+          <div className='w-full lg:w-1/2 flex flex-col justify-center gap-y-8 p-8'>
+            <div className='flex flex-col gap-y-2'>
+              <h2 className='text-xl lg:text-2xl text-lime-600'> &#35;{item.projectId} </h2>
+              <h1 className='text-2xl lg:text-4xl font-extrabold py-2'> {item.projectName} </h1>
+              <p className='text-gray-400'>{item.projectDescription} </p>
+              <div className='flex gap-4 flex-wrap'>
+                {item.projectTools.map((tool,index)=> (
+                    <button key={index} className='py-2 px-6 rounded-full bg-indigo-800 text-md'> {tool} </button>
+                ))}
+                
+              </div>
+            </div>
+
+
+            <div className='flex flex-col gap-y-2 font-light text-sm'>
+              <h3> Check it out, perhaps? </h3>
+              <button className='py-2 px-6 rounded-2xl w-fit bg-lime-500 text-md font-extrabold'> Live.. </button>
+            </div>
+          </div>
+
+        </div>
+        ))}
+        
+      </div>
+    </section>
   )
 }
 
