@@ -6,22 +6,22 @@ const ProjectSection = () => {
     {
       projectId: 1,
       image: {
-        imageAlt: 'Tempweather App',
-        source: '/tempweather-thumbnail.png'
+        imageAlt: 'DailyNest',
+        source: '/dailynest-thumbnail.png'
       },
       projectName: 'Tempweather',
-      projectDescription: 'A real-time weather forecast app with hourly and weekly predictions.',
+      projectDescription: 'DailyNest is a minimalist to-do list app built for quick task capture, daily planning, and simple habit tracking—all in one streamlined interface.',
       projectTools: ['React', 'Openweather API', 'Bootstrap'],
       projectLiveSite: ''
     },
     {
       projectId: 2,
       image: {
-        imageAlt: 'DailyNest',
-        source: '/dailynest-thumbnail.png'
+        imageAlt: 'Tempweather App',
+        source: '/tempweather-thumbnail.png'
       },
-      projectName: 'DailyNest',
-      projectDescription: 'DailyNest is a minimalist to-do list app built for quick task capture, daily planning, and simple habit tracking—all in one streamlined interface.',
+      projectName: 'Tempweather',
+      projectDescription: 'A real-time weather forecast app with hourly and weekly predictions.',
       projectTools: ['React', 'Openweather API', 'Bootstrap'],
       projectLiveSite: ''
     },
