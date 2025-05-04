@@ -39,7 +39,7 @@ const HeroSection = () => {
 
                 <div className='w-full flex flex-wrap gap-y-6 justify-center lg:justify-between items-center'>
                     {/* Explore More Button */}
-                    <div className='group flex font-semibold items-center  text-lime-500 pe-6 py-2 
+                    <div className='group flex font-semibold items-center  text-lime-500 px-6 lg:ps-0 lg:pe-6  py-2 
                         transition-all duration-200  hover:cursor-pointer
                         text-lg lg:text-xl whitespace-nowrap'>
                         Explore More
@@ -47,7 +47,7 @@ const HeroSection = () => {
                     </div>
 
                     {/* Social Icons */}
-                    <div className='flex gap-x-4 justify-center w-full lg:w-auto'>
+                    <div className='flex gap-x-4 justify-center w-full lg:w-auto text-xl lg:text-2xl'>
                         <FaLinkedin className='transition-all duration-200 hover:scale-110 hover:border-2 hover:border-white hover:cursor-pointer' />
                         <FaGithub className='transition-all duration-200 hover:scale-110 hover:border-2 hover:border-white hover:cursor-pointer' />
                         <FaFacebook className='transition-all duration-200 hover:scale-110 hover:border-2 hover:border-white hover:cursor-pointer' />
