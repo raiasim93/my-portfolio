@@ -23,7 +23,7 @@ const HeroSection = () => {
         <section className='bg-black bg- min-h-[calc(100vh-80px)]  w-full py-8 px-[6vw] 2xl:px-[16vw] flex flex-col gap-x-8 lg:flex-row justify-center items-center  text-4xl  '>
             {/* Text section */}
             <div className='w-full mb-12 lg:mb-0 lg:w-1/2 flex flex-col lg:flex-col gap-y-6  lg:gap-y-8 text-center lg:text-left '>
-                <div className=' w-full font-bold flex items-center justify-center lg:justify-start text-xl  lg:text-5xl tracking leading-tight mb-4 lg:mb-0  sm:mb-0 '>
+                <div className=' w-full font-bold flex items-center justify-center lg:justify-start text-2xl  lg:text-5xl tracking leading-tight mb-4 lg:mb-0  sm:mb-0 '>
                     Asim is engineering greatness from scratch...
                     {/* <div ref={arrowRef}>
                     <FaArrowDown  className='ms-3 text-lime-500'/>
