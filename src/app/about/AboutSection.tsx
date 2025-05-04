@@ -46,7 +46,7 @@ const AboutSection = () => {
     <section ref={sectionRef} className='bg-black text-white py-12 px-[6vw] 2xl:px-[16vw] w-full flex flex-col lg:flex-row min-h-[100vh] justify-center gap-y-16 lg:gap-y-0 '>
       <div ref={aboutIntroRef} className='w-full lg:w-1/3 flex flex-col gap-y-4 lg:gap-y-8 justify-center lg:justify-start '>
         <div className='text-2xl lg:text-4xl font-semibold text-center lg:text-start'> Hey! I&apos;m <span className='text-lime-400'> Asim. </span> </div>
-        <div className='text-md lg:text-lg font-light text-center lg:text-start'>
+        <div className='text-md lg:text-xl font-medium tracking-wide text-center lg:text-start'>
           I&apos;m a Sydney-based Frontend Developer who loves designing and developing impactful brands as well as
           building innovative applications with strong emphasis on <span className='text-lime-400 text-2xl'> Product Experience.</span>
         </div>
@@ -63,8 +63,8 @@ const AboutSection = () => {
       </div>
       
       <div ref={aboutOutroRef} className='w-full lg:w-1/3 flex flex-col items-center gap-y-4 lg:gap-y-2 lg:justify-end lg:items-end '>
-        <div className='text-2xl lg:text-3xl font-extrabold text-end'> Want to know more? </div>
-        <div className='text-lg lg:text-2xl flex gap-x-4 items-end'> Scroll Below <FaMouse className='text-lime-400' /> </div>
+        <div className='text-2xl lg:text-4xl font-extrabold text-end'> Want to know more? </div>
+        <div className='text-md lg:text-xl flex gap-x-4 items-center'> Scroll Below <FaMouse className='text-lime-400' /> </div>
       </div>
     </section>
   );

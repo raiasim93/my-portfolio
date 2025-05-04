@@ -9,7 +9,7 @@ const ToolsSection = () => {
 
   return (
     <section className="bg-black w-full py-16 px-[6vw] 2xl:px-[16vw] flex flex-col gap-y-8 border-b">
-      <div className="flex lg:justify-center text-4xl font-semibold lg:text-6xl">
+      <div className="flex lg:justify-center text-3xl font-semibold lg:text-5xl">
         My Tech Stack
       </div>
       <div className="text-gray-400 w-full text-left lg:w-1/2 lg:mx-auto lg:text-center lg:text-xl">
