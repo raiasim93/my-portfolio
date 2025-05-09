@@ -46,7 +46,7 @@ const AboutSection = () => {
     <section ref={sectionRef} className='bg-black text-white py-12 px-[6vw] 2xl:px-[16vw] w-full flex flex-col lg:flex-row min-h-[100vh] justify-center gap-y-16 lg:gap-y-0 '>
       <div ref={aboutIntroRef} className='w-full lg:w-1/3 flex flex-col gap-y-4 lg:gap-y-8 justify-center lg:justify-start '>
         <div className='text-2xl lg:text-4xl font-semibold text-center lg:text-start'> Hey! I&apos;m <span className='text-lime-400'> Asim. </span> </div>
-        <div className='text-md lg:text-xl font-medium tracking-wide text-center lg:text-start lg:w-full w-1/2 mx-auto'>
+        <div className='text-md lg:text-xl font-medium tracking-wide text-center lg:text-start w-1/2 lg:w-full mx-auto'>
           I&apos;m a Sydney-based Frontend Developer who loves designing and developing impactful brands as well as
           building innovative applications with strong emphasis on <span className='text-lime-400 text-2xl'> Product Experience.</span>
         </div>
