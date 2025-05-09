@@ -23,7 +23,7 @@ const HeroSection = () => {
         <section className='bg-black bg- min-h-[calc(100vh-80px)]  w-full py-8 px-[6vw] 2xl:px-[16vw] flex flex-col gap-x-8 lg:flex-row justify-center items-center  text-4xl  '>
             {/* Text section */}
             <div className='w-full mb-12 lg:mb-0 lg:w-1/2 flex flex-col lg:flex-col gap-y-6  lg:gap-y-8 text-center lg:text-left '>
-                <div className=' w-full font-bold flex items-center justify-center lg:justify-start text-2xl  lg:text-5xl tracking leading-tight mb-4 lg:mb-0  sm:mb-0 '>
+                <div className=' w-full font-bold flex items-center justify-center lg:justify-start text-3xl  lg:text-5xl tracking leading-tight mb-4 lg:mb-0  sm:mb-0 '>
                     Asim is engineering greatness from scratch...
                     {/* <div ref={arrowRef}>
                     <FaArrowDown  className='ms-3 text-lime-500'/>
@@ -47,7 +47,7 @@ const HeroSection = () => {
                     </div>
 
                     {/* Social Icons */}
-                    <div className='flex gap-x-4 justify-center w-full lg:w-auto text-xl lg:text-2xl'>
+                    <div className='flex gap-x-4 justify-center w-full lg:w-auto text-2xl lg:text-3xl'>
                         <FaLinkedin className='transition-all duration-200 hover:scale-110 hover:border-2 hover:border-white hover:cursor-pointer' />
                         <FaGithub className='transition-all duration-200 hover:scale-110 hover:border-2 hover:border-white hover:cursor-pointer' />
                         <FaFacebook className='transition-all duration-200 hover:scale-110 hover:border-2 hover:border-white hover:cursor-pointer' />
@@ -63,7 +63,7 @@ const HeroSection = () => {
                     alt='Image for hero section'
                     width={120}
                     height={120}
-                    className='aspect-square object-cover rounded-2xl border-2 lg:border-4 border-white w-2/3 lg:w-[70%]'
+                    className='aspect-square object-cover rounded-2xl border-2 lg:border-4 border-white w-2/5 lg:w-[70%]'
                     quality={100}
                 />
             </div>
