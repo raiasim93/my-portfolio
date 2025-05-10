@@ -16,7 +16,7 @@ const Sidebar = ({ setSidebarOpen }: { setSidebarOpen: (open: boolean) => void }
       {/* Sidebar */}
       <div className="py-8 flex flex-col justify-center items-center bg-black min-h-screen text-white px-[6vw]">
         <div className='flex flex-col gap-8 lg:gap-y-20 pb-[80px]  text-4xl lg:text-6xl  w-full justify-center items-center'>
-          {["About", "Projects", "Resume"].map((item, index) => (
+          {["About", "Projects"].map((item, index) => (
             <Link
               key={index}
               onClick={()=> setSidebarOpen(false)}
@@ -25,6 +25,13 @@ const Sidebar = ({ setSidebarOpen }: { setSidebarOpen: (open: boolean) => void }
               {item}
             </Link>
           ))}
+          <Link href="/webdev_asim.pdf"
+                target='_blank'
+                rel='noopener noreferrer'
+                onClick={()=> setSidebarOpen(false)}
+                className='relative hover:text-zinc-400 hover:scale-105 transition-all duration-200 border-b border-white hover:border-lime-500 pb-2'>
+            Resume
+          </Link>
         </div>
       </div>
     </>
