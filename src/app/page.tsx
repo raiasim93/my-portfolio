@@ -1,5 +1,5 @@
 import HeroSection from '@/components/modules/landing/HeroSection'
-import ToolsSection from '@/components/modules/landing/ToolsSection'
+import ToolsSection from '@/app/about/ToolsSection'
 import React from 'react'
 import AboutSection from './about/AboutSection'
 import GallerySection from './about/GallerySection'

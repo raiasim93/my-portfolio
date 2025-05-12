@@ -1,4 +1,4 @@
-import ToolsSection from '@/components/modules/landing/ToolsSection'
+import ToolsSection from '@/app/about/ToolsSection'
 import React from 'react'
 import QualificationSection from './QualificationSection'
 
