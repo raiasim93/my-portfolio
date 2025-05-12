@@ -2,13 +2,11 @@
 import React, {useEffect, useRef} from 'react';
 import Image from 'next/image';
 import { BiRightArrowAlt } from 'react-icons/bi';
-import { FaLinkedin, FaGithub, FaInstagram} from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaFilePdf} from 'react-icons/fa';
 import gsap from 'gsap';
 
 const HeroSection = () => {
-    const handleClick = () => {
 
-    }
     const arrowRef = useRef(null);
     useEffect(()=>{
         if(arrowRef.current){
@@ -57,9 +55,9 @@ const HeroSection = () => {
                         <a href="https://github.com/raiasim93/"
                            className='group p-2 rounded-full hover:bg-zinc-700 transition duration-150 scale-90' target='_blank' rel='noopener noreferrer'> 
                         <FaGithub className='group hover:transform hover:scale-90'/> </a>
-                        <a href="https://www.instagram.com/rai_asim93/" 
+                        <a href="/webdev_asim.pdf" 
                            className='group p-2 rounded-full hover:bg-zinc-700 transition duration-150 scale-90' target='_blank' rel='noopener noreferrer'> 
-                        <FaInstagram className='group hover:transform hover:scale-90'/> </a>
+                        <FaFilePdf className='group hover:transform hover:scale-90'/> </a>
                     </div>
                 </div>
 
