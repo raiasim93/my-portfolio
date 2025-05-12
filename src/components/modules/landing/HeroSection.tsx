@@ -2,10 +2,13 @@
 import React, {useEffect, useRef} from 'react';
 import Image from 'next/image';
 import { BiRightArrowAlt } from 'react-icons/bi';
-import { FaLinkedin, FaGithub, FaFacebook} from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaInstagram} from 'react-icons/fa';
 import gsap from 'gsap';
 
 const HeroSection = () => {
+    const handleClick = () => {
+
+    }
     const arrowRef = useRef(null);
     useEffect(()=>{
         if(arrowRef.current){
@@ -48,9 +51,9 @@ const HeroSection = () => {
 
                     {/* Social Icons */}
                     <div className='flex gap-x-4 justify-center w-full lg:w-auto text-2xl lg:text-3xl'>
-                        <FaLinkedin className='transition-all duration-200 hover:scale-110 hover:border-2 hover:border-white hover:cursor-pointer' />
-                        <FaGithub className='transition-all duration-200 hover:scale-110 hover:border-2 hover:border-white hover:cursor-pointer' />
-                        <FaFacebook className='transition-all duration-200 hover:scale-110 hover:border-2 hover:border-white hover:cursor-pointer' />
+                        <a href="https://www.linkedin.com/in/asim-rai-30a170285/" target='_blank' rel='noopener noreferrer'> <FaLinkedin/> </a>
+                        <a href="https://github.com/raiasim93/" target='_blank' rel='noopener noreferrer'> <FaGithub/> </a>
+                        <a href="https://www.instagram.com/rai_asim93/" target='_blank' rel='noopener noreferrer'> <FaInstagram/> </a>
                     </div>
                 </div>
 
@@ -63,7 +66,7 @@ const HeroSection = () => {
                     alt='Image for hero section'
                     width={120}
                     height={120}
-                    className='aspect-square object-cover rounded-2xl border-2 lg:border-4 border-white w-2/5 lg:w-[70%]'
+                    className='aspect-square object-cover rounded-2xl border-2 lg:border-4 border-white w-3/5 lg:w-[70%]'
                     quality={100}
                 />
             </div>
