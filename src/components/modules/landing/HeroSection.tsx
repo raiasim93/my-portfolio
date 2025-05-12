@@ -50,10 +50,16 @@ const HeroSection = () => {
                     </div>
 
                     {/* Social Icons */}
-                    <div className='flex gap-x-4 justify-center w-full lg:w-auto text-2xl lg:text-3xl'>
-                        <a href="https://www.linkedin.com/in/asim-rai-30a170285/" target='_blank' rel='noopener noreferrer'> <FaLinkedin/> </a>
-                        <a href="https://github.com/raiasim93/" target='_blank' rel='noopener noreferrer'> <FaGithub/> </a>
-                        <a href="https://www.instagram.com/rai_asim93/" target='_blank' rel='noopener noreferrer'> <FaInstagram/> </a>
+                    <div className='flex gap-x-2 justify-center w-full lg:w-auto text-xl lg:text-3xl'>
+                        <a href="https://www.linkedin.com/in/asim-rai-30a170285/"
+                           className='group p-2 rounded-full hover:bg-zinc-700 transition duration-150' target='_blank' rel='noopener noreferrer'> 
+                        <FaLinkedin className='group hover:transform hover:scale-90'/> </a>
+                        <a href="https://github.com/raiasim93/"
+                           className='group p-2 rounded-full hover:bg-zinc-700 transition duration-150 scale-90' target='_blank' rel='noopener noreferrer'> 
+                        <FaGithub className='group hover:transform hover:scale-90'/> </a>
+                        <a href="https://www.instagram.com/rai_asim93/" 
+                           className='group p-2 rounded-full hover:bg-zinc-700 transition duration-150 scale-90' target='_blank' rel='noopener noreferrer'> 
+                        <FaInstagram className='group hover:transform hover:scale-90'/> </a>
                     </div>
                 </div>
 
