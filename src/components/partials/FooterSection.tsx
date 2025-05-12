@@ -45,10 +45,24 @@ const FooterSection = () => {
           Last updated: {today}
         </div>
         <div className='flex gap-x-4'>
-          <div className='p-2  rounded-full bg-zinc-800 hover:scale-125 hover:bg-zinc-700 hover:transform hover:duration-100'>  <FaFilePdf className='text-lg lg:text-2xl' /> </div>
-          <div className='p-2  rounded-full bg-zinc-800 hover:scale-125 hover:bg-zinc-700 hover:transform hover:duration-100'>  <FaLinkedin className='text-lg lg:text-2xl' /> </div>
-          <div className='p-2  rounded-full bg-zinc-800 hover:scale-125 hover:bg-zinc-700 hover:transform hover:duration-100'>  <FaGithub className='text-lg lg:text-2xl' /> </div>
-
+          <a href='https://www.linkedin.com/in/asim-rai-30a170285/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='p-2  rounded-full bg-zinc-800 hover:scale-125 hover:bg-zinc-700 hover:transform hover:duration-100'> 
+            <FaLinkedin className='text-lg lg:text-2xl' />
+          </a>
+          <a href='https://github.com/raiasim93/' 
+            target='_blank'
+            rel='noopener noreferrer'
+             className='p-2  rounded-full bg-zinc-800 hover:scale-125 hover:bg-zinc-700 hover:transform hover:duration-100'> 
+            <FaGithub className='text-lg lg:text-2xl' />
+          </a>
+          <a href='/webdev_asim.pdf'
+             target='_blank'
+             rel='noopener noreferrer'
+             className='p-2  rounded-full bg-zinc-800 hover:scale-125 hover:bg-zinc-700 hover:transform hover:duration-100'> 
+            <FaFilePdf className='text-lg lg:text-2xl' />
+          </a>
         </div>
 
 
