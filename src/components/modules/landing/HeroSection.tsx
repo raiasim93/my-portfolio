@@ -48,10 +48,10 @@ const HeroSection = () => {
                     </div>
 
                     {/* Social Icons */}
-                    <div className='flex gap-x-2 justify-center w-full lg:w-auto text-xl lg:text-3xl'>
+                    <div className='flex gap-x-2 justify-center w-full lg:w-auto text-lg lg:text-3xl'>
                         <a href="https://www.linkedin.com/in/asim-rai-30a170285/"
-                           className='group p-2 rounded-full hover:bg-zinc-700 transition duration-150' target='_blank' rel='noopener noreferrer'> 
-                        <FaLinkedin className='group hover:transform hover:scale-90'/> </a>
+                           className='p-2 rounded-full hover:bg-zinc-700 hover:transform hover:duration-150 hover:scale-115' target='_blank' rel='noopener noreferrer'> 
+                        <FaLinkedin className=''/> </a>
                         <a href="https://github.com/raiasim93/"
                            className='group p-2 rounded-full hover:bg-zinc-700 transition duration-150 scale-90' target='_blank' rel='noopener noreferrer'> 
                         <FaGithub className='group hover:transform hover:scale-90'/> </a>
