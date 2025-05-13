@@ -16,16 +16,18 @@ const Navbar = () => {
         duration: 1.6,
         repeat: -1,
         yoyo: true,
-        ease: "power1.inOut"
+        ease: "power1.inOut",
+        rotation: 360,
       })
     }
   }, [])
+ 
   return (
     <>
       <nav className='
                    bg-black text-white
                       h-[80px] py-8 px-[6vw] 2xl:px-[16vw] font-normal text-xl flex justify-between items-center  '>
-        <div className='flex gap-x-4 items-center'>
+        <div className='flex gap-x-4 justify-center items-center'>
           <Link href='/' className='font-medium  text-2xl tracking-widest'>raiasim93 </Link>
          
           <div ref={starRef}> 
