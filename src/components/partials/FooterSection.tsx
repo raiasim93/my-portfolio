@@ -17,9 +17,9 @@ const FooterSection = () => {
     }
     window.location.href = 'mailto:asimrai89@gmail.com';
   }
- 
-  
-
+  const handleButtonClick = () => {
+    window.location.href = 'mailto:asimrai89@gmail.com'
+  }
   return (
     <section
       className='min-h-[60vh] px-[6vw] 2xl:px-[16vw] flex flex-col gap-y-16 lg:gap-y-32 justify-center items-center  bg-black cursor-pointer'>
@@ -28,12 +28,18 @@ const FooterSection = () => {
         <div onClick={handleSectionClick}
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
-          className='flex justify-center text-2xl lg:text-4xl'>
+          className='lg:flex justify-center text-2xl lg:text-4xl hidden'>
           <div className={`absolute inset  duration-500 transition-all ease-in-out  flex justify-center items-center ${hovered ? '-translate-x-full opacity-0' : 'translate-x-0 opacity-100'}`}>
             Click to mail me
           </div>
           <div className={`absolute inset  duration-500 transition-all ease-in-out flex justify-center items-center  ${hovered ? 'translate-x-0 opacity-100' : 'translate-x-0 opacity-0'}`}>
             Redirecting now ...
+          </div>
+        </div>
+        <div className='p-4 flex flex-col justify-between lg:hidden'>
+          <h2 className='text-4xl'> Reach out to me ! </h2>
+          <div className='flex justify-center'>
+          <button onClick={handleButtonClick} className='sm:flex lg:hidden bg-white text-black text-sm py-2 px-4 rounded-xl mt-4'> Send mail   </button>
           </div>
         </div>
 
