@@ -1,39 +1,30 @@
 "use client"
 import React, {useEffect, useRef} from 'react';
 import Image from 'next/image';
-import { BiRightArrowAlt } from 'react-icons/bi';
+import {BiRightArrowAlt } from 'react-icons/bi';
 import { FaLinkedin, FaGithub, FaFilePdf} from 'react-icons/fa';
 import gsap from 'gsap';
 
 const HeroSection = () => {
-
-    const arrowRef = useRef(null);
-    useEffect(()=>{
-        if(arrowRef.current){
-          gsap.to(arrowRef.current,{
-            y: 2,
-            scale: 1.2,
-            duration: 1.6,
+   const arrowRef = useRef(null);
+   useEffect(()=> {
+      if(arrowRef.current){
+        gsap.to(arrowRef.current,{
+            x: 20, 
+            duration: 1,
             repeat: -1,
+            ease: "sine.inOut",
             yoyo: true,
-            ease: "power1.inOut"
-          });
-        }
-    }, []);
+        })
+      }
+   })
     return (
         <section className='bg-black bg- min-h-[calc(100vh-80px)]  w-full py-8 px-[6vw] 2xl:px-[16vw] flex flex-col gap-x-8 lg:flex-row justify-center items-center  text-4xl  '>
             {/* Text section */}
             <div className='w-full mb-12 lg:mb-0 lg:w-1/2 flex flex-col lg:flex-col gap-y-6  lg:gap-y-8 text-center lg:text-left '>
                 <div className=' w-full font-bold flex items-center justify-center lg:justify-start text-3xl  lg:text-5xl tracking leading-tight mb-4 lg:mb-0  sm:mb-0 '>
                     Asim is engineering greatness from scratch...
-                    {/* <div ref={arrowRef}>
-                    <FaArrowDown  className='ms-3 text-lime-500'/>
-                    </div> */}
-                   
                 </div>
-                {/* <div className='w-full  lg:w-3/4 text-4xl lg:text-7xl ' >
-                    I am a   <span className='text-lime-400'> Frontend Developer </span> 
-                </div> */}
                 <div className='text-lg lg:text-xl w-full text-gray-400 lg:flex hidden tracking-wider pe-10'>
                     I turn ideas into interactive realities and craft product experience that solve real-world problems. Let&apos;s bring vision to your life!!
                 </div>
@@ -42,22 +33,24 @@ const HeroSection = () => {
                     {/* Explore More Button */}
                     <div className='group flex font-semibold items-center  text-lime-500 px-6 lg:ps-0 lg:pe-6  py-2 
                         transition-all duration-200  hover:cursor-pointer
-                        text-lg lg:text-xl whitespace-nowrap'>
+                        text-xl lg:text-2xl whitespace-nowrap'>
                         Explore More
-                        <BiRightArrowAlt className='text-2xl lg:text-4xl transition-all duration-300 group-hover:translate-x-4 ' />
+                        <div className='' ref={arrowRef}>
+                        <BiRightArrowAlt  className='text-4xl lg:text-4xl transition-all duration-300 group-hover:translate-x-4 ' />
+                        </div>
                     </div>
 
                     {/* Social Icons */}
-                    <div className='flex gap-x-2 justify-center w-full lg:w-auto text-lg lg:text-3xl'>
+                    <div className='flex gap-x-2 justify-center items-center w-full lg:w-auto text-lg lg:text-3xl'>
                         <a href="https://www.linkedin.com/in/asim-rai-30a170285/"
                            className='p-2 rounded-full hover:bg-zinc-700 hover:transform hover:duration-150 hover:scale-115' target='_blank' rel='noopener noreferrer'> 
-                        <FaLinkedin className=''/> </a>
+                        <FaLinkedin className='text-2xl'/> </a>
                         <a href="https://github.com/raiasim93/"
-                           className='group p-2 rounded-full hover:bg-zinc-700 transition duration-150 scale-90' target='_blank' rel='noopener noreferrer'> 
-                        <FaGithub className='group hover:transform hover:scale-90'/> </a>
+                           className='p-2 rounded-full hover:bg-zinc-700 hover:transform hover:duration-150 hover:scale-115' target='_blank' rel='noopener noreferrer'> 
+                        <FaGithub className='text-2xl'/> </a>
                         <a href="/webdev_asim.pdf" 
-                           className='group p-2 rounded-full hover:bg-zinc-700 transition duration-150 scale-90' target='_blank' rel='noopener noreferrer'> 
-                        <FaFilePdf className='group hover:transform hover:scale-90'/> </a>
+                           className=' p-2 rounded-full hover:bg-zinc-700 hover:transform hover:duration-150 hover:scale-115' target='_blank' rel='noopener noreferrer'> 
+                        <FaFilePdf className='text-2xl'/> </a>
                     </div>
                 </div>
 
