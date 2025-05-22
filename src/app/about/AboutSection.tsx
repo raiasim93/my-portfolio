@@ -54,7 +54,7 @@ const AboutSection = () => {
       
       <div ref={aboutImageRef} className='w-full lg:w-1/3 flex justify-center items-center '>
         <Image
-          className='aspect-square w-1/3 lg:w-3/4 object-cover border-2 border-white rounded-2xl'
+          className='aspect-square w-4/7 lg:w-3/4 object-cover border-2 border-white rounded-2xl'
           src='/aboutHero.jpeg'
           alt='Main Image of Hero Section'
           width={400}
