@@ -22,7 +22,7 @@ const FooterSection = () => {
   }
   return (
     <section
-      className='min-h-[60vh] px-[6vw] 2xl:px-[16vw] flex flex-col gap-y-16 lg:gap-y-32 justify-center items-center  bg-black cursor-pointer'>
+      className='min-h-[60vh] px-[6vw] 2xl:px-[16vw] flex flex-col gap-y-8 lg:gap-y-32 justify-center items-center  bg-black cursor-pointer'>
       <div className={`tracking-wider font-extrabold w-full flex flex-col gap-y-4 justify-center items-center`}
       >
         <div onClick={handleSectionClick}
@@ -37,9 +37,11 @@ const FooterSection = () => {
           </div>
         </div>
         <div className='p-4 flex flex-col justify-between lg:hidden'>
-          <h2 className='text-4xl'> Reach out to me ! </h2>
+          <h2 className='text-3xl'> Reach out to me ! </h2>
           <div className='flex justify-center'>
-          <button onClick={handleButtonClick} className='sm:flex lg:hidden bg-white text-black text-sm py-2 px-4 rounded-xl mt-4'> Send mail   </button>
+          <button onClick={handleButtonClick} 
+            className='sm:flex lg:hidden bg-white hover:bg-gray-500 hover:text-white text-black text-sm py-2 px-4 rounded-xl mt-4 cursor-pointer hover:shadow-2xl  hover:shadow-zinc-400 hover:duration-200 hover:transition-all'> 
+              Send mail   </button>
           </div>
         </div>
 
@@ -54,19 +56,19 @@ const FooterSection = () => {
           <a href='https://www.linkedin.com/in/asim-rai-30a170285/'
               target='_blank'
               rel='noopener noreferrer'
-              className='p-2  rounded-full bg-zinc-800 hover:scale-125 hover:bg-zinc-700 hover:transform hover:duration-100'> 
+              className='p-2  rounded-full bg-zinc-800 hover:scale-125 hover:bg-zinc-700 hover:transform hover:transition-all hover:duration-100'> 
             <FaLinkedin className='text-lg lg:text-2xl' />
           </a>
           <a href='https://github.com/raiasim93/' 
             target='_blank'
             rel='noopener noreferrer'
-             className='p-2  rounded-full bg-zinc-800 hover:scale-125 hover:bg-zinc-700 hover:transform hover:duration-100'> 
+             className='p-2  rounded-full bg-zinc-800 hover:scale-125 hover:bg-zinc-700 hover:transform hover:transition-all hover:duration-100'> 
             <FaGithub className='text-lg lg:text-2xl' />
           </a>
           <a href='/AsimResume.pdf'
              target='_blank'
              rel='noopener noreferrer'
-             className='p-2  rounded-full bg-zinc-800 hover:scale-125 hover:bg-zinc-700 hover:transform hover:duration-100'> 
+             className='p-2  rounded-full bg-zinc-800 hover:scale-125 hover:bg-zinc-700 hover:transform hover:transition-all hover:duration-100'> 
             <FaFilePdf className='text-lg lg:text-2xl' />
           </a>
         </div>
