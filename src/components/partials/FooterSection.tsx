@@ -63,7 +63,7 @@ const FooterSection = () => {
              className='p-2  rounded-full bg-zinc-800 hover:scale-125 hover:bg-zinc-700 hover:transform hover:duration-100'> 
             <FaGithub className='text-lg lg:text-2xl' />
           </a>
-          <a href='/webdev_asim.pdf'
+          <a href='/AsimResume.pdf'
              target='_blank'
              rel='noopener noreferrer'
              className='p-2  rounded-full bg-zinc-800 hover:scale-125 hover:bg-zinc-700 hover:transform hover:duration-100'> 

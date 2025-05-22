@@ -25,7 +25,7 @@ const Sidebar = ({ setSidebarOpen }: { setSidebarOpen: (open: boolean) => void }
               {item}
             </Link>
           ))}
-          <Link href="/webdev_asim.pdf"
+          <Link href="/AsimResume.pdf"
                 target='_blank'
                 rel='noopener noreferrer'
                 onClick={()=> setSidebarOpen(false)}
