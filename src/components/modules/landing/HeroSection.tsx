@@ -1,15 +1,16 @@
 "use client"
 import React, {useEffect, useRef} from 'react';
 import Image from 'next/image';
-import {BiRightArrowAlt } from 'react-icons/bi';
+import {BiRightArrowAlt, BiDownArrowAlt } from 'react-icons/bi';
 import { FaLinkedin, FaGithub, FaFilePdf} from 'react-icons/fa';
 import gsap from 'gsap';
 
 const HeroSection = () => {
-   const arrowRef = useRef(null);
+   const arrowRightRef = useRef(null);
+   const arrowDownRef = useRef(null);
    useEffect(()=> {
-      if(arrowRef.current){
-        gsap.to(arrowRef.current,{
+      if(arrowRightRef.current){
+        gsap.to(arrowRightRef.current,{
             x: 20, 
             duration: 1,
             repeat: -1,
@@ -17,7 +18,18 @@ const HeroSection = () => {
             yoyo: true,
         })
       }
-   })
+   });
+   useEffect(()=> {
+    if(arrowDownRef.current){
+        gsap.to(arrowDownRef.current, {
+            y:5,
+            duration: 1,
+            repeat: -1,
+            ease: "sine.inOut",
+            yoyo: true
+        })
+    }
+   },[]);
     return (
         <section className='bg-black bg- min-h-[calc(100vh-80px)]  w-full py-8 px-[6vw] 2xl:px-[16vw] flex flex-col gap-x-8 lg:flex-row justify-center items-center  text-4xl  '>
             {/* Text section */}
@@ -35,8 +47,11 @@ const HeroSection = () => {
                         transition-all duration-200  hover:cursor-pointer
                         text-xl lg:text-2xl whitespace-nowrap'>
                         Explore More
-                        <div className='' ref={arrowRef}>
+                        <div className='hidden lg:flex' ref={arrowRightRef}>
                         <BiRightArrowAlt  className='text-4xl lg:text-4xl transition-all duration-300 group-hover:translate-x-4 ' />
+                        </div>
+                        <div className='flex lg:hidden' ref={arrowDownRef}>
+                        <BiDownArrowAlt  className='text-4xl lg:text-4xl transition-all duration-300 group-hover:translate-x-4 ' />
                         </div>
                     </div>
 
@@ -48,7 +63,7 @@ const HeroSection = () => {
                         <a href="https://github.com/raiasim93/"
                            className='p-2 rounded-full hover:bg-zinc-700 hover:transform hover:duration-150 hover:scale-115' target='_blank' rel='noopener noreferrer'> 
                         <FaGithub className='text-2xl'/> </a>
-                        <a href="/webdev_asim.pdf" 
+                        <a href="/AsimResume.pdf" 
                            className=' p-2 rounded-full hover:bg-zinc-700 hover:transform hover:duration-150 hover:scale-115' target='_blank' rel='noopener noreferrer'> 
                         <FaFilePdf className='text-2xl'/> </a>
                     </div>
