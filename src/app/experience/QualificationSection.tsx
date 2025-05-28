@@ -17,7 +17,7 @@ const QualificationSection = () => {
     console.log(`Card clicked at index: ${index}`);
   }
   return (
-    <section className='py-16 px-[6vw] 2xl:px-[16vw] bg-zinc-950 flex  flex-col gap-y-8'>
+    <section className='py-16 px-[6vw] 2xl:px-[16vw] bg-zinc-900 flex  flex-col gap-y-8'>
       <div className='text-4xl'>
         What and Where...
       </div>
@@ -26,7 +26,7 @@ const QualificationSection = () => {
         return (
           <div
             onClick={() => handleClick(index)}
-            key={index} className='bg-zinc-600 hover:bg-zinc-500 hover:duration-200 flex flex-col gap-y-4 p-4 rounded-xl cursor-pointer'>
+            key={index} className='bg-zinc-800 hover:bg-zinc-700 hover:duration-200 flex flex-col gap-y-4 p-4 rounded-xl cursor-pointer'>
             <div className='flex flex-col-reverse lg:flex-row justify-between items-center'>
               <div className='w-full text-xl'> {item.date} </div>
               <div className='w-full flex items-center gap-x-4'>
