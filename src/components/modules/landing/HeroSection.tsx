@@ -37,7 +37,7 @@ const HeroSection = () => {
                 <div className=' w-full font-bold flex items-center justify-center lg:justify-start text-3xl  lg:text-5xl tracking leading-tight mb-4 lg:mb-0  sm:mb-0 '>
                     Asim is engineering greatness from scratch...
                 </div>
-                <div className='text-lg lg:text-xl w-full text-gray-400 lg:flex hidden tracking-wider pe-10'>
+                <div className='text-lg lg:text-xl font-light w-full text-gray-400 lg:flex hidden tracking-wider pe-10'>
                     I turn ideas into interactive realities and craft product experience that solve real-world problems. Let&apos;s bring vision to your life!!
                 </div>
 
