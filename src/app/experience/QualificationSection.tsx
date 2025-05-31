@@ -18,7 +18,7 @@ const QualificationSection = () => {
   }
   return (
     <section className='py-16 px-[6vw] 2xl:px-[16vw] bg-zinc-900 flex  flex-col gap-y-8'>
-      <div className='text-4xl'>
+      <div className='text-3xl lg:text-4xl'>
         What and Where...
       </div>
       {qualificationData.map((item, index) => {
