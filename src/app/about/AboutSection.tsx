@@ -17,8 +17,8 @@ const AboutSection = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: "top 80%",
-        end: "center 50%",
+        start: "top 40%",
+        end: "center 70%",
         toggleActions: "play none none reset",
         scrub: 1, 
       }
