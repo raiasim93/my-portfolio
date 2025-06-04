@@ -19,7 +19,7 @@ const AboutSection = () => {
         trigger: sectionRef.current,
         start: "top 40%",
         end: "center 70%",
-        toggleActions: "play none none reset",
+        toggleActions: "play none none none",
         scrub: 1, 
       }
     });
