@@ -43,11 +43,11 @@ const ProjectSection = () => {
   ]
   return (
     <section className='bg-black min-h-screen  px-[6vw] 2xl:px-[16vw]'>
-      <h1 className='flex justify-center py-12 text-2xl lg:text-4xl'> Latest Projectas </h1>
+      <h1 className='flex justify-center py-12 text-2xl lg:text-4xl'> Latest Projects </h1>
       <div className='max-w-7xl rounded-2xl flex flex-col gap-y-16'>
         {/* project card starts here */}
         {projects.map((item,index)=> (
-          <div key={index} className={`flex flex-col lg:flex-row bg-zinc-950 rounded-2xl
+          <div key={index} className={`flex flex-col lg:flex-row bg-zinc-900 rounded-2xl
                                        ${index % 2 === 0 ? 'lg:flex-row-reverse': ''} `}>
           <div className='w-full lg:w-1/2 aspect-[12/9] lg:auto relative rounded-2xl overflow-hidden '>
             <Image
@@ -72,7 +72,7 @@ const ProjectSection = () => {
 
 
             <div className='flex flex-col gap-y-2 font-light text-sm'>
-              <h3> Check it out, perhaps? </h3>
+              <h3 className='text-lg'> Check it out, perhaps? </h3>
               <button className='py-2 px-6 rounded-2xl w-fit bg-lime-500 text-md font-extrabold'> Live.. </button>
             </div>
           </div>
