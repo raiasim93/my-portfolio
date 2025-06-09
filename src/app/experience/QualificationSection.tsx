@@ -41,7 +41,7 @@ const QualificationSection = () => {
             </div>
             {openCards[index] && (<div className= {`h-[2px] w-full bg-black transition-all duration-300 ease-in-out ${openCards[index]? 'opacity-100': 'opacity-0'}`}/>)}
 
-            <div ref={el => (contentRefs.current[index] = el)}
+            <div ref={el => {contentRefs.current[index] = el}}
               style={{
                 maxHeight: openCards[index] ? `${expandedHeight}px` : '0px'
               }}
