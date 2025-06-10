@@ -35,7 +35,7 @@ const QualificationSection = () => {
                   <div className='text-gray-400'> {item.school}</div>
                 </div>
                 <div>
-                  <FaChevronDown className={`transition-all duration-300 ease-in-out${openCards[index]? 'rotate-180': ''}`} />
+                  <FaChevronDown className={`transition-all duration-300 ease-in-out ${openCards[index] ? 'rotate-180': ''}`} />
                 </div>
               </div>
             </div>
