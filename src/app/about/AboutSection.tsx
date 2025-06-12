@@ -18,9 +18,9 @@ const AboutSection = () => {
       scrollTrigger: {
         trigger: sectionRef.current,
         start: "top 40%",
-        end: "center 70%",
+        end: "center 60%",
         toggleActions: "play none none none",
-        scrub: 1, 
+        scrub: 1
       }
     });
     tl.fromTo(
