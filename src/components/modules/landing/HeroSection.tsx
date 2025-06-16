@@ -47,6 +47,7 @@ const HeroSection = () => {
                         transition-all duration-200  hover:cursor-pointer
                         text-xl lg:text-2xl whitespace-nowrap'>
                         Explore More
+                        {/* animation */}
                         <div className='hidden lg:flex' ref={arrowRightRef}>
                         <BiRightArrowAlt  className='text-4xl lg:text-4xl transition-all duration-300 group-hover:translate-x-4 ' />
                         </div>
