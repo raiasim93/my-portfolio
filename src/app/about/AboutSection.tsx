@@ -18,26 +18,26 @@ const AboutSection = () => {
       scrollTrigger: {
         trigger: sectionRef.current,
         start: "top 40%",
-        end: "center 60%",
+        end: "center 40%",
         toggleActions: "play none none none",
         scrub: 1
       }
     });
     tl.fromTo(
       aboutIntroRef.current,
-      {x: -500, opacity: 0},
-      {x: 0, opacity: 1, duration: 1.2, ease:"power1.out"}
+      {y: 300, opacity: 0, scale:1.6},
+      {y: 0, opacity: 1, scale:1, duration: 1.2, ease:"power1.out"}
     )
     tl.fromTo(
       aboutImageRef.current,
-      {x: -500, opacity: 0},
-      {x: 0, opacity: 1, duration: 1.4, ease:"power1.out"},
+      {y: 300, opacity: 0, scale:1.6},
+      {y: 0, opacity: 1, scale:1, duration: 1.4, ease:"power1.out"},
       "-=1.2"
     )
     tl.fromTo(
       aboutOutroRef.current,
-      {x: -500, opacity: 0},
-      {x:0, opacity: 1, duration: 1, ease: "power1.out"},
+      {y: 300, opacity: 0, scale: 2.6},
+      {y:0, opacity: 1, scale:1, duration: 1, ease: "power1.out"},
       "-=1"
     )
   }, []);
