@@ -25,16 +25,15 @@ const GallerySection = () => {
             scrollTrigger: {
                 trigger: sectionRef.current,
                 start: "top 80%",
-                end: "center center",
+                end: "center 40%",
                 toggleActions: "play none none reset",
                 scrub: 1,
-                markers: false,
-            }
+              }
         });
         tl.fromTo(
             titleRef.current,
-            {xPercent: 100, opacity: 0},
-            {xPercent: 0, opacity: 1, duration: 1, ease: "power1.out"}
+            {yPercent: 100, opacity: 0,scale: 1.2},
+            {yPercent: 0, opacity: 1, duration: 1, scale:1, ease: "power1.out"}
         );
         tl.fromTo(
             bentoRef.current,
@@ -71,31 +70,6 @@ const GallerySection = () => {
                                          hover:border-white hover:border-4' fill alt={`image ${index}`} src={media} />
                     </div>
                 ))}
-                {/* <div className='lg:col-span-3 lg:row-span-4 lg:order-1 md:col-span-2 md:row-span-6 md:order-1 relative'>
-                    <Image className='rounded-2xl object-cover duration-200 transition-all  cursor-pointer hover:shadow-2xl hover:shadow-lime-400 hover:scale-105 hover:border-white hover:border-4' fill alt='image' src='/rect1.jpg' />
-                </div>
-                <div className='lg:col-span-3 lg:row-span-2 lg:order-2 md:col-span-2 md:row-span-3 md:order-2 relative'>
-                    <Image className='rounded-2xl object-cover duration-200 transition-all  cursor-pointer hover:shadow-2xl hover:shadow-lime-400 hover:scale-105 hover:border-white hover:border-2' fill alt='image' src='/wide1.jpg' />
-                </div>
-                <div className='lg:col-span-3 lg:row-span-4 lg:order-3 md:col-span-2 md:row-span-6 md:order-3 relative'>
-                    <Image className='rounded-2xl object-cover duration-200 transition-all  cursor-pointer hover:shadow-2xl hover:shadow-lime-400 hover:scale-105 hover:border-white hover:border-2' fill alt='image' src='/rect2.jpg' />
-                </div>
-                <div className='lg:col-span-3 lg:row-span-2 lg:order-4 md:col-span-2 md:row-span-3 md:order-4 relative'>
-                    <Image className='rounded-2xl object-cover duration-200 transition-all  cursor-pointer hover:shadow-2xl hover:shadow-lime-400 hover:scale-105 hover:border-white hover:border-2' fill alt='image' src='/wide2.jpg' />
-                </div>
-                <div className='lg:col-span-3 lg:row-span-4 lg:order-5 md:col-span-2 md:row-span-6 md:order-5 relative'>
-                    <Image className='rounded-2xl object-cover duration-200 transition-all  cursor-pointer hover:shadow-2xl hover:shadow-lime-400 hover:scale-105 hover:border-white hover:border-2' fill alt='image' src='/rect3.jpg' />
-                </div>
-                <div className='lg:col-span-3 lg:row-span-4 lg:order-6 md:col-span-2 md:row-span-6 md:order-6 relative'>
-                    <Image className='rounded-2xl object-cover duration-200 transition-all  cursor-pointer hover:shadow-2xl hover:shadow-lime-400 hover:scale-105 hover:border-white hover:border-2' fill alt='image' src='/rect4.jpg' />
-                </div>
-                <div className='lg:col-span-3 lg:row-span-2 lg:order-7 md:col-span-2 md:row-span-3 md:order-7 relative'>
-                    <Image className='rounded-2xl object-cover duration-200 transition-all  cursor-pointer hover:shadow-2xl hover:shadow-lime-400 hover:scale-105 hover:border-white hover:border-2' fill alt='image' src='/wide3.jpg' />
-                </div>
-                <div className='lg:col-span-3 lg:row-span-2 lg:order-8 md:col-span-2 md:row-span-3 md:order-8 relative'>
-                    <Image className='rounded-2xl object-cover duration-200 transition-all  cursor-pointer hover:shadow-2xl hover:shadow-lime-400 hover:scale-105 hover:border-white hover:border-2' fill alt='image' src='/wide4.jpg' />
-                </div> */}
-
             </div>
         </section>
     )
