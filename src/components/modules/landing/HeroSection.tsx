@@ -49,10 +49,10 @@ const HeroSection = () => {
                         Explore More
                         {/* animation */}
                         <div className='hidden lg:flex' ref={arrowRightRef}>
-                        <BiRightArrowAlt  className='text-4xl lg:text-4xl transition-all duration-300 group-hover:translate-x-4 ' />
+                        <BiRightArrowAlt  className='text-4xl lg:text-4xl transition-all duration-300 group-hover:translate-x-2 ' />
                         </div>
                         <div className='flex lg:hidden' ref={arrowDownRef}>
-                        <BiDownArrowAlt  className='text-4xl lg:text-4xl transition-all duration-300 group-hover:translate-x-4 ' />
+                        <BiDownArrowAlt  className='text-4xl lg:text-4xl transition-all duration-300' />
                         </div>
                     </div>
 
