@@ -29,17 +29,14 @@ body {
   font-weight: 400;
 }
 
-body{
-  @apply text-white;
+.tool-scrollbar::-webkit-scrollbar{
+  width: 8px;
 }
-::-webkit-scrollbar{
-  width: 4px;
+.tool-scrollbar::-webkit-scrollbar-track{
+  background: rgba(118, 107, 107, 0.1);
 }
-::-webkit-scrollbar-track{
+.tool-scrollbar::-webkit-scrollbar-thumb{
   background-color: white;
-}
-::-webkit-scrollbar-button{
-  background-color: black;
-  border-radius: 1rem;
-  border: none;
+  border-radius: 8px;
+  
 }
