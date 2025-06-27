@@ -29,6 +29,10 @@ body {
   font-weight: 400;
 }
 
+body{
+  @apply text-white;
+}
+
 .tool-scrollbar::-webkit-scrollbar{
   width: 8px;
 }
