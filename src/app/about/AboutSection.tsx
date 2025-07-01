@@ -36,7 +36,7 @@ const AboutSection = () => {
     )
     tl.fromTo(
       aboutOutroRef.current,
-      {y: 400, opacity: 0, scale: 2.6},
+      {y: 500, opacity: 0, scale: 2.6},
       {y:0, opacity: 1, scale:1, duration: 1, ease: "power1.out"},
       "-=1"
     )
