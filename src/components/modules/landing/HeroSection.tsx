@@ -36,7 +36,7 @@ const HeroSection = () => {
             <div className='w-full mb-12 lg:mb-0 lg:w-1/2 flex flex-col gap-y-6  lg:gap-y-8 text-center lg:text-left '>
                 <div className=' w-full font-bold flex flex-col  justify-center lg:justify-start text-3xl  lg:text-5xl tracking leading-tight mb-4 lg:mb-0  sm:mb-0 '>
                 <div> Asim here!</div> 
-                <div>  I don't just code — I craft <span className='text-lime-500'>  greatness </span> </div> 
+                <div>  I don&apos;t just code — I craft <span className='text-lime-500'>  greatness </span> </div> 
                 
                 </div>
                 <div className='text-lg lg:text-xl font-light w-full text-gray-400 lg:flex hidden pe-10'>
