@@ -33,13 +33,13 @@ const HeroSection = () => {
     return (
         <section className='bg-black bg- min-h-[calc(100vh-80px)]  w-full py-8 px-[6vw] 2xl:px-[16vw] flex flex-col gap-x-8 lg:flex-row justify-center items-center  text-4xl  '>
             {/* Text section */}
-            <div className='w-full mb-12 lg:mb-0 lg:w-1/2 flex flex-col gap-y-6  lg:gap-y-8 text-center lg:text-left '>
-                <div className=' w-full font-bold flex flex-col  justify-center lg:justify-start text-3xl  lg:text-5xl tracking leading-tight mb-4 lg:mb-0  sm:mb-0 '>
+            <div className='w-full mb-12 lg:mb-0 lg:w-1/2 flex flex-col text-center lg:text-left '>
+                <div className=' w-full font-bold flex flex-col  justify-center lg:justify-start text-3xl  lg:text-5xl tracking leading-tight mb-2 '>
                 <div> Asim here!</div> 
                 <div>  I don&apos;t just code — I craft <span className='text-lime-500'>  greatness </span> </div> 
                 
                 </div>
-                <div className='text-lg lg:text-xl font-light w-full text-gray-400 lg:flex hidden pe-10'>
+                <div className='text-lg lg:text-xl font-light w-full text-gray-400 lg:flex hidden pe-10 mb-8'>
                     I turn ideas into interactive realities and craft product experience that solve real-world problems. Let&apos;s bring vision to your life!!
                 </div>
 
