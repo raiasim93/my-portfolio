@@ -19,7 +19,7 @@ const QualificationSection = () => {
   return (
     <section className='py-16 px-[6vw] 2xl:px-[16vw] bg-zinc-900 flex  flex-col gap-y-8'>
       <div className='text-3xl lg:text-4xl'>
-        Officially Qualified-ishh
+        Official Qualifications
       </div>
       {qualificationData.map((item, index) => {
         const expandedHeight = contentRefs.current[index]?.scrollHeight ?? 0;
@@ -28,11 +28,11 @@ const QualificationSection = () => {
             onClick={() => handleClick(index)}
             key={index} className={`bg-zinc-800 hover:bg-zinc-700 hover:duration-200 flex flex-col gap-y-4 p-4 rounded-xl cursor-pointer`}>
             <div className={`flex flex-col-reverse lg:flex-row justify-between items-center` }>
-              <div className='w-full text-2xl'> {item.date} </div>
+              <div className='w-full text-xl mt-2'> {item.date} </div>
               <div className='w-full flex items-center gap-x-4'>
                 <div className='w-full flex flex-col items-start lg:items-end'>
                   <div className='text-2xl'> {item.degree}</div>
-                  <div className='text-gray-400'> {item.school}</div>
+                  <div className='text-gray-300'> {item.school}</div>
                 </div>
                 <div>
                   <FaChevronDown className={`transition-all duration-300 ease-in-out ${openCards[index] ? 'rotate-180': ''}`} />
