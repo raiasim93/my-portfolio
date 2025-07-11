@@ -77,11 +77,11 @@ const HeroSection = () => {
             {/* Image section */}
             <div className='w-full lg:w-1/2 flex justify-center items-center lg:justify-end '>
                 <Image
-                    src='/ghibli.PNG'
+                    src='/ghibliHero.png'
                     alt='Image for hero section'
                     width={120}
                     height={120}
-                    className='aspect-square object-cover rounded-2xl border-2 lg:border-4 border-white w-3/5 lg:w-[70%]'
+                    className='aspect-square object-contain rounded-2xl  w-3/5 lg:w-[70%]  lg:opacity-75'
                     quality={100}
                 />
             </div>
