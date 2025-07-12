@@ -1,11 +1,10 @@
 @import "tailwindcss";
 @import "@fontsource/poppins/400.css";
 
-
 :root {
   --background: #ffffff;
   --foreground: #000000;
-  --font-sans: "Poppins", sans-serif;
+  --font-sans: "poppins", sans-serif;
 }
 
 @theme inline {
@@ -15,12 +14,7 @@
   --font-mono: var(--font-geist-mono);
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #09090b;
-    --foreground: #ededed;
-  }
-} */
+
 
 body {
   background: var(--background);
