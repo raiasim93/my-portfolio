@@ -14,11 +14,11 @@ const ToolsSection = () => {
     }
   })
   return (
-    <section className="bg-black w-full py-16 px-[6vw] 2xl:px-[16vw] flex flex-col gap-y-8 ">
-      <div className="flex lg:justify-center text-3xl font-semibold lg:text-5xl">
+    <section className="bg-black text-white w-full py-16 px-[6vw] 2xl:px-[16vw] flex flex-col ">
+      <div className="flex lg:justify-center text-3xl font-semibold lg:text-5xl mb-4">
        Frameworks &amp; Tools
       </div>
-      <div className="text-gray-300 w-full text-left lg:w-1/2 lg:mx-auto lg:text-center lg:text-xl">
+      <div className="text-white w-full text-left lg:w-1/2 lg:mx-auto lg:text-center lg:text-xl mb-12">
         Here are the development tools I specialize in and will be using to make your ideas and vision into life. 🚀
       </div>
 
