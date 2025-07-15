@@ -40,8 +40,8 @@ const FooterSection = () => {
           <h2 className='text-3xl'> Reach out to me ! </h2>
           <div className='flex justify-center'>
           <button onClick={handleButtonClick} 
-            className='sm:flex lg:hidden bg-white hover:bg-gray-500 hover:text-white text-black text-sm py-2 px-4 rounded-xl mt-4 cursor-pointer hover:shadow-2xl  hover:shadow-zinc-400 hover:duration-200 hover:transition-all'> 
-              Send mail   </button>
+            className='sm:flex lg:hidden bg-white text-black transition-all hover:bg-slate-200 hover:scale-95 duration-200 text-md py-2 px-4 rounded-md mt-4 cursor-pointer'> 
+              Send Mail    </button>
           </div>
         </div>
 
