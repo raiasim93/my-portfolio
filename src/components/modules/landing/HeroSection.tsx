@@ -34,7 +34,7 @@ const HeroSection = () => {
         <section className='bg-black bg- min-h-[calc(100vh-80px)]  w-full py-8 px-[6vw] 2xl:px-[16vw] flex flex-col gap-x-8 lg:flex-row justify-center items-center  text-4xl  '>
             {/* Text section */}
             <div className='w-full mb-12 lg:mb-0 lg:w-1/2 flex flex-col text-center lg:text-left '>
-                <div className=' w-full font-bold flex flex-col  justify-center lg:justify-start text-3xl  lg:text-5xl tracking leading-tight mb-2 '>
+                <div className=' w-full font-bold flex flex-col  justify-center lg:justify-start text-3xl  lg:text-5xl  mb-2 '>
                 <div> Asim here!</div> 
                 <div>  I don&apos;t just code — I craft <span className='text-lime-500'>  greatness </span> </div> 
                 
