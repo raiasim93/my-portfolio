@@ -65,8 +65,8 @@ const AboutSection = () => {
       </div>
       
       <div ref={aboutOutroRef} className='w-full lg:w-1/3 flex flex-col items-center gap-y-4 lg:gap-y-2 lg:justify-end lg:items-end '>
-        <div className='text-2xl lg:text-4xl font-extrabold text-end'> Want to know more? </div>
-        <div className='text-md lg:text-xl flex gap-x-4 items-center'> Scroll Below <FaMouse className='text-lime-400' /> </div>
+        <div className='text-2xl font-extrabold text-end'> Want to know more? </div>
+        <div className='text-xl flex gap-x-4 items-center'> Scroll Below <FaMouse className='text-lime-400' /> </div>
       </div>
     </section>
   );
