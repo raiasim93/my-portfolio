@@ -22,7 +22,7 @@ const HeroSection = () => {
    useEffect(()=> {
     if(arrowDownRef.current){
         gsap.to(arrowDownRef.current, {
-            y:5,
+            y:2,
             duration: 1,
             repeat: -1,
             ease: "sine.inOut",
@@ -33,7 +33,7 @@ const HeroSection = () => {
     return (
         <section className='bg-black bg- min-h-[calc(100vh-80px)]  w-full py-8 px-[6vw] 2xl:px-[16vw] flex flex-col gap-x-8 lg:flex-row justify-center items-center  text-4xl  '>
             {/* Text section */}
-            <div className='w-full mb-12 lg:mb-0 lg:w-1/2 flex flex-col text-center lg:text-left '>
+            <div className='w-full mb-8 lg:mb-0 lg:w-1/2 flex flex-col text-center lg:text-left '>
                 <div className=' w-full font-bold flex flex-col  justify-center lg:justify-start text-3xl  lg:text-5xl  mb-2 '>
                 <div> Asim here!</div> 
                 <div>  I don&apos;t just code — I craft <span className='text-lime-500'>  greatness </span> </div> 
@@ -45,7 +45,7 @@ const HeroSection = () => {
 
                 <div className='w-full flex flex-wrap gap-y-6 justify-center lg:justify-between items-center'>
                     {/* Explore More Button */}
-                    <div className=' flex font-semibold items-center  text-lime-500 px-6 lg:ps-0 lg:pe-6  py-2 
+                    <div className=' flex font-semibold items-center  text-white px-6 lg:ps-0 lg:pe-6
                         transition-all duration-200  hover:cursor-pointer
                         text-xl lg:text-2xl whitespace-nowrap'>
                         Explore More
