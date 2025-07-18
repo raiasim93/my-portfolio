@@ -108,6 +108,15 @@ const toolsData = [
             width={40}
             height={40} />
     },
+    {
+        id: "13",
+        toolName: "gsap",
+        image: <Image src={'/gsap.png'}
+            className='aspect-square object-cover h-16 w-16 lg:h-20 lg:w-20'
+            alt='gsap Icon image'
+            width={40}
+            height={40} />
+    },
 
 ]
 
