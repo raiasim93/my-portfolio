@@ -39,7 +39,7 @@ const HeroSection = () => {
                 <div>  I don&apos;t just code — I craft <span className='text-lime-500'>  greatness </span> </div> 
                 
                 </div>
-                <div className='text-lg lg:text-xl font-light w-full lg:w-4/5 text-gray-400 lg:flex hidden pe-10 mb-8'>
+                <div className='text-lg lg:text-xl font-light w-full lg:w-4/5 text-gray-400 lg:flex hidden pe-10 mb-4'>
                     I turn ideas into interactive realities and craft product experience that solve real-world problems. Let&apos;s bring vision to your life!!
                 </div>
 
