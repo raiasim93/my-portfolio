@@ -25,7 +25,7 @@ const ToolsSection = () => {
       {/* Tools Grid with Smooth Expansion */}
       <div
         ref={toolDivRef}
-        className={`tool-scrollbar grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8  lg:overflow-hidden transition-all duration-500 overflow-y-auto
+        className={`tool-scrollbar grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8  lg:overflow-hidden transition-all duration-500 overflow-y-auto
                     ${showAll ? {height}: "max-h-[200px]"}
         }`}
       >
