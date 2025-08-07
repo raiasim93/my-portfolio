@@ -47,7 +47,7 @@ const AboutSection = () => {
       <div ref={aboutIntroRef} className='w-full lg:w-1/3 flex flex-col gap-y-4 lg:gap-y-8 justify-center lg:justify-start '>
         <div className='text-2xl lg:text-4xl font-semibold text-center lg:text-start'> Hey! I&apos;m <span className='text-lime-400'> Asim. </span> </div>
         <div className='text-sm lg:text-2xl font-medium tracking-wide text-center lg:text-start w-2/3 lg:w-full mx-auto'>
-          I&apos;m a Sydney-based programmer who loves designing and developing  innovative applications with strong emphasis on <span className='text-lime-400 text-2xl'> Product Experience.</span>
+          I&apos;m a Sydney-based programmer who loves designing and developing innovative web applications with strong emphasis on <span className='text-lime-400 text-2xl'> Product Experience.</span>
         </div>
       </div>
       
