@@ -66,8 +66,8 @@ const GallerySection = () => {
                              
                             `}>
                         <Image className='rounded-2xl object-cover duration-200 transition-all 
-                                         cursor-pointer hover:shadow-2xl hover:shadow-black
-                                         hover:border-white hover:border-4' fill alt={`image ${index}`} src={media} />
+                                         cursor-pointer hover:shadow-xl hover:shadow-black
+                                         hover:border-white hover:border-2' fill alt={`image ${index}`} src={media} />
                     </div>
                 ))}
             </div>
