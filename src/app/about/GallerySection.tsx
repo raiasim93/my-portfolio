@@ -46,7 +46,7 @@ const GallerySection = () => {
         <section ref={sectionRef} className='py-[12vh] px-[6vw] 2xl:px-[16vw] bg-black text-white'>
             <div ref={titleRef} className='w-full flex justify-center flex-col lg:justify-between mb-2 lg:mb-8'>
                 <div className='w-full lg:w-2/3 text-2xl lg:text-4xl font-extrabold mb-2'> Running on Passion - whether it is building Apps or  Football</div>
-                <div className='w-full text-md lg:text-xl font-semibold'> My life in Bento and Pics </div>
+                <div className='w-full text-md lg:text-xl font-semibold'> My life in Bento Grids </div>
             </div>
             <div ref={bentoRef} className='w-full py-4 lg:py-12 min-h-screen  gap-5 shadow-xl
                              grid grid-cols-2
