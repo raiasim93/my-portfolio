@@ -34,7 +34,7 @@ const HeroSection = () => {
         <section className='bg-black bg- min-h-[calc(100vh-80px)]  w-full py-8 px-[6vw] 2xl:px-[16vw] flex flex-col gap-x-8 lg:flex-row justify-center items-center  text-4xl  '>
             {/* Text section */}
             <div className='w-full mb-8 lg:mb-0 lg:w-1/2 flex flex-col text-center lg:text-left '>
-                <div className=' w-full lg:w-4/5 font-bold flex flex-col  justify-center lg:justify-start text-3xl  lg:text-5xl  mb-4 '>
+                <div className=' w-full lg:w-4/5 font-bold flex flex-col  justify-center lg:justify-start text-3xl  lg:text-5xl  mb-8 '>
                 <div> Asim here!</div> 
                 <div>  I don&apos;t just code — I craft <span className='text-lime-500'>  greatness </span> </div> 
                 
@@ -45,18 +45,17 @@ const HeroSection = () => {
 
                 <div className='w-full flex flex-wrap gap-y-6 justify-center lg:justify-between items-center'>
                     {/* Explore More Button */}
-                    <div className=' flex font-semibold items-center  text-white px-6 lg:ps-0 lg:pe-6
+                    {/* <div className=' flex font-semibold items-center  text-white px-6 lg:ps-0 lg:pe-6
                         transition-all duration-200  hover:cursor-pointer
                         text-xl lg:text-2xl whitespace-nowrap'>
                         Explore More
-                        {/* animation */}
                         <div className='hidden lg:flex' ref={arrowRightRef}>
                         <BiRightArrowAlt  className='text-4xl lg:text-4xl transition-all duration-300 ' />
                         </div>
                         <div className='flex lg:hidden' ref={arrowDownRef}>
                         <BiDownArrowAlt  className='text-4xl lg:text-4xl transition-all duration-300' />
                         </div>
-                    </div>
+                    </div> */}
 
                     {/* Social Icons */}
                     <div className='flex gap-x-2 justify-center items-center w-full lg:w-auto text-lg lg:text-3xl'>
