@@ -44,18 +44,6 @@ const HeroSection = () => {
                 </div>
 
                 <div className='w-full flex flex-wrap gap-y-6 justify-center lg:justify-between items-center'>
-                    {/* Explore More Button */}
-                    {/* <div className=' flex font-semibold items-center  text-white px-6 lg:ps-0 lg:pe-6
-                        transition-all duration-200  hover:cursor-pointer
-                        text-xl lg:text-2xl whitespace-nowrap'>
-                        Explore More
-                        <div className='hidden lg:flex' ref={arrowRightRef}>
-                        <BiRightArrowAlt  className='text-4xl lg:text-4xl transition-all duration-300 ' />
-                        </div>
-                        <div className='flex lg:hidden' ref={arrowDownRef}>
-                        <BiDownArrowAlt  className='text-4xl lg:text-4xl transition-all duration-300' />
-                        </div>
-                    </div> */}
 
                     {/* Social Icons */}
                     <div className='flex gap-x-2 justify-center items-center w-full lg:w-auto text-lg lg:text-3xl'>
