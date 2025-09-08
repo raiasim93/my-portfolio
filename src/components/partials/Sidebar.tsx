@@ -21,7 +21,7 @@ const Sidebar = ({ setSidebarOpen }: { setSidebarOpen: (open: boolean) => void }
               key={index}
               onClick={()=> setSidebarOpen(false)}
               href={`/${item.toLowerCase()}`}
-              className=' relative hover:scale-105 transition-all duration-200 border-b border-white hover:border-lime-500 pb-2' >
+              className=' relative hover:scale-105 transition-all duration-200 border-b border-white hover:border-lime-500 pb-4' >
               {item}
             </Link>
           ))}
