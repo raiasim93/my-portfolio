@@ -35,7 +35,7 @@ const HeroSection = () => {
             {/* Text section */}
             <div className='w-full mb-8 lg:mb-0 lg:w-1/2 flex flex-col text-center lg:text-left '>
                 <div className=' w-full lg:w-4/5 font-bold flex flex-col  justify-center lg:justify-start text-3xl  lg:text-5xl  mb-8 '>
-                <div> Asim here!</div> 
+                <div className='text-5xl mb-4'> Asim here!</div> 
                 <div>  I don&apos;t just code — I craft <span className='text-lime-500'>  greatness </span> </div> 
                 
                 </div>
