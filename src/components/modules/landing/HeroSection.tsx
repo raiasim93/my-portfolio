@@ -1,7 +1,6 @@
 "use client"
 import React, {useEffect, useRef} from 'react';
 import Image from 'next/image';
-import {BiRightArrowAlt, BiDownArrowAlt } from 'react-icons/bi';
 import { FaLinkedin, FaGithub, FaFilePdf} from 'react-icons/fa';
 import gsap from 'gsap';
 
